@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Friend from './components/Freind'
-import Login from './components/Login'
-import Task from './components/Task'
-import Message from './components/Message'
-import News from './components/News'
-import Joke from './components/Joke'
-import Event from './components/Event'
+// import Friend from './components/Freind'
+// import Login from './components/Login'
+// import Task from './components/Task'
+// import Message from './components/Message'
+// import News from './components/News'
+// import Joke from './components/Joke'
+// import Event from './components/Event'
 
 class App extends Component {
   render() {
