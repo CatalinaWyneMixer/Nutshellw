@@ -8,12 +8,12 @@ import Login from './components/Login'
 // import TaskForm from './Forms/TaskForm'
 // import MessageList from './components/MessageList'
 // import MessageForm from './Forms/MessageForm'
-// import NewsList from './components/NewsList'
+import NewsList from './components/NewsList'
 import NewsForm from './Forms/NewsForm'
 // import JokeList from './components/JokeList'
 // import JokeForm from './Forms/JokeForm'
-// import EventList from './components/EventList'
-// import EventForm from './Forms/EventForm'
+import EventList from './components/EventList'
+import EventForm from './Forms/EventForm'
 
 export default class ApplicationViews extends Component {
 
@@ -186,7 +186,7 @@ export default class ApplicationViews extends Component {
       <React.Fragment>
         <Route exact path="/" component={Login} />
         <Route exact path="/login" component={Login} />
-        {/* <Route exact path="/news" render={(props) => {
+        <Route exact path="/news" render={(props) => {
           if (this.isAuthenticated()) {
             return <NewsList {...props}
               deleteNews={this.deleteNews}
@@ -194,12 +194,11 @@ export default class ApplicationViews extends Component {
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
+        }} />
         <Route exact path="/news/new" render={(props) => {
           if (this.isAuthenticated()) {
             return <NewsForm {...props}
-              addNews={this.addNews}
-              employees={this.state.employees} />
+              addNews={this.addNews} />
           } else {
             return <Redirect to="/login" />
           }
@@ -287,7 +286,7 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/login" />
           }
         }} /> */}
-        {/* <Route exact path="/events" render={(props) => {
+        <Route exact path="/events" render={(props) => {
           if (this.isAuthenticated()) {
             return <EventList {...props}
               deleteEvent={this.deleteEvent}
@@ -303,14 +302,14 @@ export default class ApplicationViews extends Component {
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
-        {/* <Route exact path="/events/:eventId(\d+)" render={(props) => {
+        }} />
+         {/*<Route exact path="/events/:eventId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <EventDetail {...props} deleteEvent={this.deleteEvent} events={this.state.events} />
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
+        }} />*/}
         {/* <Route exact path="/friends" render={(props) => {
           if (this.isAuthenticated()) {
             return <FriendList {...props}
