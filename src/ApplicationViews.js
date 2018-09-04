@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NewsForm from './Forms/NewsForm'
 // import Friend from './components/Friend'
-// import Login from './components/Login'
+import Login from './components/Login'
 // import Task from './components/Task'
 // import Message from './components/Message'
 // import News from './components/News'
@@ -16,10 +16,8 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Nutshell Dos!</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
+      <Login />
       <NewsForm />
       </div>
     );
