@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import "../components/css/Login.css"
+import DropdownDate from 'react-dropdown-date'
 
 export default class EventForm extends Component {
     // Set initial state
@@ -52,17 +53,17 @@ export default class EventForm extends Component {
                                onChange={this.handleFieldChange}
                                id="breed" placeholder="Type URL here" />
                     </div>
-                    <div className="form-group">
-                    <label htmlFor="employee">Assign to caretaker</label>
-                        <select defaultValue="" name="event" id="event"
+                    <div className="glyphicon glyphicon-calendar">
+
+                        <select type="date"
                                 onChange={this.handleFieldChange}>
-                            <option value="">Select an constructNewEvent</option>
+
                         {
                             // this.props.events.map(e => <option key={e.id} id={e.id}>{e.name}</option>)
                         }
                         </select>
                         </div>
-                    <button type="submit" onClick={this.constructNewEvent} className="btn btn-primary">Submit</button>
+                    <button type="date" onClick={this.constructNewEvent} className="btn btn-primary">Submit</button>
                 </form>
             </React.Fragment>
         )
