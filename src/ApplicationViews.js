@@ -8,7 +8,7 @@ import Login from './components/Login'
 // import TaskForm from './Forms/TaskForm'
 // import MessageList from './components/MessageList'
 // import MessageForm from './Forms/MessageForm'
-// import NewsList from './components/NewsList'
+import NewsList from './components/NewsList'
 import NewsForm from './Forms/NewsForm'
 // import JokeList from './components/JokeList'
 // import JokeForm from './Forms/JokeForm'
@@ -195,7 +195,7 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/login" />
           }
         }} /> */}
-        <Route exact path="/news/new" render={(props) => {
+        <Route exact path="/news" render={(props) => {
           if (this.isAuthenticated()) {
             return <NewsForm {...props}
               addNews={this.addNews}
