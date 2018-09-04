@@ -12,8 +12,8 @@ import Login from './components/Login'
 import NewsForm from './Forms/NewsForm'
 // import JokeList from './components/JokeList'
 // import JokeForm from './Forms/JokeForm'
-// import EventList from './components/EventList'
-// import EventForm from './Forms/EventForm'
+import EventList from './components/EventList'
+import EventForm from './Forms/EventForm'
 
 export default class ApplicationViews extends Component {
 
@@ -287,7 +287,7 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/login" />
           }
         }} /> */}
-        {/* <Route exact path="/events" render={(props) => {
+        <Route exact path="/events" render={(props) => {
           if (this.isAuthenticated()) {
             return <EventList {...props}
               deleteEvent={this.deleteEvent}
@@ -303,14 +303,14 @@ export default class ApplicationViews extends Component {
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
-        {/* <Route exact path="/events/:eventId(\d+)" render={(props) => {
+        }} />
+         {/*<Route exact path="/events/:eventId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <EventDetail {...props} deleteEvent={this.deleteEvent} events={this.state.events} />
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
+        }} />*/}
         {/* <Route exact path="/friends" render={(props) => {
           if (this.isAuthenticated()) {
             return <FriendList {...props}
