@@ -186,7 +186,7 @@ export default class ApplicationViews extends Component {
       <React.Fragment>
         <Route exact path="/" component={Login} />
         <Route exact path="/login" component={Login} />
-        {/* <Route exact path="/news" render={(props) => {
+        <Route exact path="/news" render={(props) => {
           if (this.isAuthenticated()) {
             return <NewsList {...props}
               deleteNews={this.deleteNews}
@@ -194,12 +194,11 @@ export default class ApplicationViews extends Component {
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
-        <Route exact path="/news" render={(props) => {
+        }} />
+        <Route exact path="/news/new" render={(props) => {
           if (this.isAuthenticated()) {
             return <NewsForm {...props}
-              addNews={this.addNews}
-              employees={this.state.employees} />
+              addNews={this.addNews} />
           } else {
             return <Redirect to="/login" />
           }
