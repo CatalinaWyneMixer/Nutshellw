@@ -1,7 +1,7 @@
 //from Former Nutshell project Data Managers. this uses Grunt / Browserify
 //only one data manager is needed - DRY by passing in props
 
-const remoteURL = "http://localhost:5002"
+const remoteURL = "http://localhost:8088"
 
 export default Object.create(null, {
     get: {
