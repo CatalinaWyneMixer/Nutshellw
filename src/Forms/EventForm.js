@@ -5,8 +5,9 @@ import DropdownDate from 'react-dropdown-date'
 export default class EventForm extends Component {
     // Set initial state
     state = {
-        event: "",
-        id: "",
+        eventName: "",
+        url: "",
+        date: ""
     }
 
     // Update state whenever an input field is edited
@@ -41,29 +42,26 @@ export default class EventForm extends Component {
                     <div className="form-group">
                         <label htmlFor="eventName">Event name</label>
                         <input type="text" required="true"
-                               className="form-control"
-                               onChange={this.handleFieldChange}
-                               id="eventName"
-                               placeholder="Event name" />
+                            className="form-control"
+                            onChange={this.handleFieldChange}
+                            id="eventName"
+                            placeholder="Event name" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="breed">URL </label>
+                        <label htmlFor="url">URL </label>
                         <input type="text" required="true"
-                               className="form-control"
-                               onChange={this.handleFieldChange}
-                               id="breed" placeholder="Type URL here" />
+                            className="form-control"
+                            onChange={this.handleFieldChange}
+                            id="breed" placeholder="Type URL here" />
                     </div>
-                    <div className="glyphicon glyphicon-calendar">
+                    <div className="form-group">
+                        <label htmlFor="date">Date </label>
+                        <input type="date" required="true"
+                            className="form-control" />
+                    </div>
+                    <button type="submit" onClick={this.constructNewEvent} className="btn btn-primary">Submit</button>
 
-                        <select type="date"
-                                onChange={this.handleFieldChange}>
 
-                        {
-                            // this.props.events.map(e => <option key={e.id} id={e.id}>{e.name}</option>)
-                        }
-                        </select>
-                        </div>
-                    <button type="date" onClick={this.constructNewEvent} className="btn btn-primary">Submit</button>
                 </form>
             </React.Fragment>
         )
