@@ -1,20 +1,23 @@
 {
-    "news": [
-    ],
-
-    "messages": [
-    ],
-
-    "tasks": [
-    ],
-
-    "jokes": [
-    ],
-
-    "events": [
-    ],
-
-    "friends": [
-    ]
-
-  }
+  "news": [
+    {
+      "title": "asdf",
+      "date": "2018-09-04",
+      "URL": "asdf",
+      "Content": "asdf",
+      "id": 1
+    },
+    {
+      "title": "asdf",
+      "date": "2018-09-04",
+      "URL": "asdf",
+      "Content": "asdf",
+      "id": 2
+    }
+  ],
+  "messages": [],
+  "tasks": [],
+  "jokes": [],
+  "events": [],
+  "friends": []
+}
