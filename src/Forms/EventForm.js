@@ -4,8 +4,9 @@ import "../components/css/Login.css"
 export default class EventForm extends Component {
     // Set initial state
     state = {
-        event: "",
-        id: "",
+        eventName: "",
+        url: "",
+        date: "",
     }
 
     // Update state whenever an input field is edited
@@ -25,7 +26,9 @@ export default class EventForm extends Component {
             window.alert("Please input")
         } else {
             const event = {
-                name: this.state.eventlName,
+                eventName: this.state.eventName,
+                url: this.state.url,
+                date: this.state.date
             }
 
             // Create the animal and redirect user to animal list
@@ -40,29 +43,28 @@ export default class EventForm extends Component {
                     <div className="form-group">
                         <label htmlFor="eventName">Event name</label>
                         <input type="text" required="true"
-                               className="form-control"
-                               onChange={this.handleFieldChange}
-                               id="eventName"
-                               placeholder="Event name" />
+                            onChange={this.handleFieldChange}
+                            id="eventName"
+                            placeholder="Event name" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="breed">URL </label>
+                        <label htmlFor="url">URL </label>
                         <input type="text" required="true"
-                               className="form-control"
-                               onChange={this.handleFieldChange}
-                               id="breed" placeholder="Type URL here" />
+                            onChange={this.handleFieldChange}
+                            id="url"
+                            placeholder="Type URL here" />
                     </div>
                     <div className="form-group">
-                    <label htmlFor="employee">Assign to caretaker</label>
-                        <select defaultValue="" name="event" id="event"
-                                onChange={this.handleFieldChange}>
-                            <option value="">Select an constructNewEvent</option>
-                        {
-                            // this.props.events.map(e => <option key={e.id} id={e.id}>{e.name}</option>)
-                        }
-                        </select>
-                        </div>
-                    <button type="submit" onClick={this.constructNewEvent} className="btn btn-primary">Submit</button>
+                        <label htmlFor="date">Date </label>
+                        <input type="date" required="true"
+                             onChange={this.handleFieldChange}
+                             id="date"/>
+
+                    </div>
+                    <button type="submit" onClick={this.constructNewEvent}
+                    className="btn btn-primary">Submit</button>
+
+
                 </form>
             </React.Fragment>
         )

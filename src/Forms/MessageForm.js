@@ -15,16 +15,17 @@ export default class MessageForm extends Component {
         this.setState(stateToChange)
     }
 
-    constructMessages = evt => {
+    constructNewMessage = evt => {
         evt.preventDefault()
         const messages = {
-            Id: this.state.messageId,
-            To: this.state.messageTo,
+            id: this.state.messageId,
+            to: this.state.messageTo,
             message: this.state.message,
-            Date: this.state.messageDate
+            date: this.state.messageDate
         }
 
-        this.props.addMessages(messages).then(() => this.props.history.push("/messages"))
+        this.props.addMessages(messages)
+        .then(() => this.props.history.push("/messages/new"))
     }
 
     render() {
@@ -35,7 +36,7 @@ export default class MessageForm extends Component {
                 <form className="messageForm">
                     <div className="form-group">
                         <section className="messageField">
-                            <label htmlFor="userID"></label>
+                            <label htmlFor="messageId"></label>
                             <label htmlFor="messageTo">Message To:</label>
                             <p></p>
                             <input type="text" required="true"
@@ -52,7 +53,7 @@ export default class MessageForm extends Component {
                     <div className="form-group">
                         <section className="messageField">
                             <p></p>
-                            <label htmlFor="newsContent">Message:</label>
+                            <label htmlFor="message">Message:</label>
                             <p></p>
                             <textarea 
                             className="form-control"
@@ -62,7 +63,7 @@ export default class MessageForm extends Component {
                         </section>
                     </div>
                     <p></p>
-                    <button type="submit" onClick={this.constructNews} className="btn btn-primary">Send Message</button>
+                    <button type="submit" onClick={this.addMessage} className="btn btn-primary">Send Message</button>
                 </form>
             </React.Fragment>
         )

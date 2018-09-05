@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom"
+
 
 export default class NewsList extends Component {
 
@@ -47,7 +49,7 @@ export default class NewsList extends Component {
                     <button type="button"
                         className="btn btn-success"
                         onClick={() => {
-                            this.props.history.push("/news/new")
+                            this.props.history.push("/news/newChat")
                         }
                         }>
                         Create New Article
@@ -63,12 +65,13 @@ export default class NewsList extends Component {
                                     this.props.news.map(news =>
                                         <div id={`animal--${news.id}`} key={news.id} className="card">
                                             <div className="card-body">
-                                                <h5 className="card-title">
-                                                    {news.name}
-                                                    {/* <Link className="nav-link" to={`/news/${news.id}`}>Details</Link> */}
-                                                        <button onClick={() => this.props.deleteAnimal(news.id)}
+                                                <h2 className="card-title">
+                                                    <section>{news.title}</section>
+                                                    <h5>{news.date}</h5>
+                                                    <Link className="nav-link" to={`/news/${news.id}`}>Details</Link>
+                                                        <button onClick={() => this.props.deleteNews(news.id)}
                                                             className="card-link">Delete</button>
-                                                </h5>
+                                                </h2>
                                             </div>
                                         </div>
                                     )
