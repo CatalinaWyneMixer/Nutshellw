@@ -3,8 +3,7 @@ import React, { Component } from 'react'
 export default class MessageForm extends Component {
 
     state = {
-        messageId: "",
-        messageTo: "",
+        userName: "",
         message: "",
         messageDate: ""
     }
@@ -18,14 +17,13 @@ export default class MessageForm extends Component {
     constructNewMessage = evt => {
         evt.preventDefault()
         const messages = {
-            id: this.state.messageId,
-            to: this.state.messageTo,
+            userName: this.state.userName,
             message: this.state.message,
             date: this.state.messageDate
         }
 
-        this.props.addMessage(messages)
-        .then(() => this.props.history.push("/messages"))
+        this.props.addMessages(messages)
+        .then(() => this.props.history.push("/messages/new"))
     }
 
     render() {
@@ -63,7 +61,7 @@ export default class MessageForm extends Component {
                         </section>
                     </div>
                     <p></p>
-                    <button type="submit" onClick={this.constructNewMessage} className="btn btn-primary">Send Message</button>
+                    <button type="submit" onClick={this.addMessage} className="btn btn-primary">Send Message</button>
                 </form>
             </React.Fragment>
         )
