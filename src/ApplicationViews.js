@@ -1,21 +1,22 @@
 import { Route, Redirect } from 'react-router-dom'
 import React, { Component } from 'react';
 import DataManager from './modules/DataManager'
-// import FriendList from './components/friends/FriendList'
-// import FriendForm from './components/friends/FriendForm'
-import Login from './components/login/Login'
-import TaskList from './components/tasks/TaskList'
-import TaskForm from './components/tasks/TaskForm'
-// import MessageList from './components/messages/MessageList'
-// import MessageForm from './components/messages/MessageForm'
-import NewsList from './components/news/NewsList'
-import NewsForm from './components/news/NewsForm'
-import NewsDetail from './components/news/NewsDetail'
-// import JokeList from './components/jokes/JokeList'
-// import JokeForm from './components/jokes/JokeForm'
-import EventList from './components/events/EventList'
-import EventForm from './components/events/EventForm'
-import EventDetail from './components/events/EventDetails'
+// import FriendList from './components/FriendList'
+// import FriendForm from './Forms/FriendForm'
+import Login from './components/Login'
+import TaskList from './tasks/TaskList'
+import TaskForm from './tasks/TaskForm'
+import MessageList from './messages/MessageList'
+import MessageForm from './messages/MessageForm'
+import NewsList from './news/NewsList'
+import NewsForm from './news/NewsForm'
+import NewsDetail from './news/NewsDetail'
+// import JokeList from './components/JokeList'
+// import JokeForm from './Forms/JokeForm'
+import EventList from './events/EventList'
+import EventForm from './events/EventForm'
+import EventDetail from './events/EventDetails'
+
 
 export default class ApplicationViews extends Component {
 
@@ -223,23 +224,24 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/login" />
           }
         }} /> */}
-        {/* <Route exact path="/messages/new" render={(props) => {
+
+        <Route exact path="/messages" render={(props) => {
           if (this.isAuthenticated()) {
-            return <MessageForm {...props}
-              addMessage={this.addMessage} />
-          } else {
-            return <Redirect to="/login" />
-          }
-        }} /> */}
-        {/* <Route exact path="/messages/:messageId(\d+)" render={(props) => {
-          if (this.isAuthenticated()) {
-            return <MessageDetail {...props}
-              deleteMessage={this.deleteMessage}
+            return <MessageList {...props}
               messages={this.state.messages} />
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
+        }} />
+        <Route exact path="/messages/new" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <MessageForm {...props}
+              messages={this.state.messages}
+              addMessage={this.addMessage} />
+          } else {
+            return <Redirect to="/login" />
+          }
+        }} />
         <Route exact path="/tasks" render={(props) => {
           if (this.isAuthenticated()) {
             return <TaskList {...props}
@@ -338,6 +340,6 @@ export default class ApplicationViews extends Component {
         }} /> */}
       </React.Fragment >
     )
+
   }
 }
-

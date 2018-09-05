@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import events_pic from "./events_pic.jpg"
+import events_pic from "events_pic.jpg"
 import { Link } from "react-router-dom"
 import './Event.css'
 
@@ -25,7 +25,7 @@ class EventList extends Component{
                                 {event.name}
                                 {event.details}
                                     <Link className="nav-link" to={`/events/${event.id}`}>Details</Link>
-                                <a 
+                                <a
                                     onClick={() => this.props.deleteEvent(event.id)}
                                     className="card-link">Rid</a>
                             </h5>
