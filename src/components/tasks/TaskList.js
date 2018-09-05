@@ -8,7 +8,7 @@ class TaskList extends Component {
     }
 
     toggleCheckboxChange = () => {
-        const { handleCheckboxChange, label } = this.props;
+        const { handleCheckboxChange, id } = this.props;
 
         this.setState(({ isChecked }) => (
             {
@@ -16,10 +16,10 @@ class TaskList extends Component {
             }
         ));
 
-        handleCheckboxChange(label);
+        handleCheckboxChange(id);
     }
     render() {
-        const { label } = this.props;
+        const { id } = this.state;
         const { isChecked } = this.state;
         return (<React.Fragment>
             <form className="taskListForm">
@@ -51,11 +51,12 @@ class TaskList extends Component {
                         <label>
                             <input
                                 type="checkbox"
-                                value={label}
+                                id={`task--${task.id}`}
+                                value={id}
                                 checked={isChecked}
                                 onChange={this.toggleCheckboxChange}
                             />
-                            {label}
+                            {id}
                         </label>
                     </div>
                 )
