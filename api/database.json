@@ -23,16 +23,14 @@
       "date": "2018-09-04"
     }
   ],
-  "tasks": [],
-  "jokes": [],
-  "events": [
+  "tasks": [
     {
-      "eventName": "asdf",
-      "url": "asdf",
+      "name": "asdf",
       "date": "2018-09-05",
-      "details": "asdf",
       "id": 1
     }
   ],
+  "jokes": [],
+  "events": [],
   "friends": []
 }
