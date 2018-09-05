@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import events_pic from "events_pic.jpg"
+//import events_pic from "events_pic.jpg"
 import { Link } from "react-router-dom"
 import './Event.css'
 
