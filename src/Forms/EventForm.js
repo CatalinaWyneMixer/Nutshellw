@@ -7,6 +7,7 @@ export default class EventForm extends Component {
         eventName: "",
         url: "",
         date: "",
+        details: "",
     }
 
     // Update state whenever an input field is edited
@@ -20,15 +21,18 @@ export default class EventForm extends Component {
         Local method for validation, creating event object, and
         invoking the function reference passed from parent component
      */
+
+     //setting default input conditions - throwing alert
     constructNewEvent = evt => {
         evt.preventDefault()
-        if (this.state.event === "") {
-            window.alert("Please input")
+        if (this.state.url === "" ||this.state.date === "" || this.state.eventName === "" || this.state.details === "") {
+            window.alert("Please input all fields ya jerk!")
         } else {
             const event = {
                 eventName: this.state.eventName,
                 url: this.state.url,
-                date: this.state.date
+                date: this.state.date,
+                details: this.state.details,
             }
 
             // Create the animal and redirect user to animal list
@@ -53,6 +57,13 @@ export default class EventForm extends Component {
                             onChange={this.handleFieldChange}
                             id="url"
                             placeholder="Type URL here" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="details">Details</label>
+                        <input type="text" required="true"
+                            onChange={this.handleFieldChange}
+                            id="details"
+                            placeholder="Add details" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="date">Date </label>
