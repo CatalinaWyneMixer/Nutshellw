@@ -6,6 +6,7 @@ import DataManager from './modules/DataManager'
 import Login from './components/login/Login'
 import TaskList from './components/tasks/TaskList'
 import TaskForm from './components/tasks/TaskForm'
+import TaskDetail from './components/tasks/TaskDetails'
 import MessageList from './components/messages/MessageList'
 import MessageForm from './components/messages/MessageForm'
 import NewsList from './components/news/NewsList'
@@ -16,7 +17,6 @@ import NewsDetail from './components/news/NewsDetail'
 import EventList from './components/events/EventList'
 import EventForm from './components/events/EventForm'
 import EventDetail from './components/events/EventDetails'
-
 
 export default class ApplicationViews extends Component {
 
@@ -259,13 +259,13 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/login" />
           }
         }} />
-        {/* <Route exact path="/tasks/:taskId(\d+)" render={(props) => {
+        <Route exact path="/tasks/:taskId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <TaskDetail {...props} deleteTask={this.deleteTask} tasks={this.state.tasks} />
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
+        }} />
         {/* <Route exact path="/jokes" render={(props) => {
           if (this.isAuthenticated()) {
             return <JokeList {...props}
