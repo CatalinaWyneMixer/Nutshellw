@@ -64,7 +64,7 @@ export default class NewsList extends Component {
                             <section className="news">
                                 {
                                     this.props.news.map(news =>
-                                        <div id={`animal--${news.id}`} key={news.id} className="newsCard">
+                                        <div id={`news--${news.id}`} key={news.id} className="newsCard">
                                             <div className="newsCard-body">
                                                 <h2 className="newsCard-title">
                                                     <section>{news.title}</section>
