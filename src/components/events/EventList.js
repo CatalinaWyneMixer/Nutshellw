@@ -25,7 +25,7 @@ class EventList extends Component{
                                 {event.name}
                                 {event.details}
                                     <Link className="nav-link" to={`/events/${event.id}`}>Details</Link>
-                                <a href="#"
+                                <a 
                                     onClick={() => this.props.deleteEvent(event.id)}
                                     className="card-link">Rid</a>
                             </h5>
