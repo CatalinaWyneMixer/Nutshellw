@@ -24,7 +24,7 @@ class EventList extends Component{
                                 {/* <img src={events_pic} className="icon--dog" /> */}
                                 {event.name}
                                     <Link className="nav-link" to={`/events/${event.id}`}>Details</Link>
-                                <a href="#"
+                                <a 
                                     onClick={() => this.props.deleteevent(event.id)}
                                     className="card-link">Rid</a>
                             </h5>

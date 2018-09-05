@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import "./newsList.css"
+import "./News.css"
 
 export default class NewsDetail extends Component {
 
@@ -10,15 +10,15 @@ export default class NewsDetail extends Component {
         return (
             <section className="news">
                 <div className="news">
-                    <div key={news.id} className="card">
-                        <div className="card-body">
-                            <h4 className="card-title">
-                                {news.title}
+                    <div key={news.id} className="newsCard">
+                        <div className="newsCard-body">
+                            <h4 className="newsCard-title">
+                                {news.URL}
                             </h4>
-                            <h6 className="card-title">{news.breed}</h6>
+                            <h6 className="newsCard-title">{news.Content}</h6>
                                 <button onClick={() => this.props.deleteNews(news.id)
                                     .then(() => this.props.history.push("/news"))}
-                                className="card-link">Delete</button>
+                                className="newsCard-link">Delete</button>
                         </div>
                     </div>
                 </div>
