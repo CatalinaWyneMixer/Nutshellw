@@ -4,12 +4,13 @@ import DataManager from './modules/DataManager'
 // import FriendList from './components/FriendList'
 // import FriendForm from './Forms/FriendForm'
 import Login from './components/Login'
-// import TaskList from './components/TaskList'
-// import TaskForm from './Forms/TaskForm'
+import TaskList from './components/TaskList'
+import TaskForm from './Forms/TaskForm'
 // import MessageList from './components/MessageList'
 // import MessageForm from './Forms/MessageForm'
 import NewsList from './components/NewsList'
 import NewsForm from './Forms/NewsForm'
+import NewsDetail from './components/NewsDetail'
 // import JokeList from './components/JokeList'
 // import JokeForm from './Forms/JokeForm'
 import EventList from './components/EventList'
@@ -203,7 +204,7 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/login" />
           }
         }} />
-        {/* <Route exact path="/news/:newsId(\d+)" render={(props) => {
+        <Route exact path="/news/:newsId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <NewsDetail {...props}
               deleteNews={this.deleteNews}
@@ -211,7 +212,7 @@ export default class ApplicationViews extends Component {
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
+        }} />
         {/* <Route exact path="/messages" render={props => {
           if (this.isAuthenticated()) {
             return <MessageList {...props}
@@ -238,7 +239,7 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/login" />
           }
         }} /> */}
-        {/* <Route exact path="/tasks" render={(props) => {
+        <Route exact path="/tasks" render={(props) => {
           if (this.isAuthenticated()) {
             return <TaskList {...props}
               deleteTask={this.deleteTask}
@@ -246,15 +247,15 @@ export default class ApplicationViews extends Component {
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
-        {/* <Route exact path="/tasks/new" render={(props) => {
+        }} /> 
+       <Route exact path="/tasks/new" render={(props) => {
           if (this.isAuthenticated()) {
             return <TaskForm {...props}
               addTask={this.addTask} />
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
+        }} />
         {/* <Route exact path="/tasks/:taskId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <TaskDetail {...props} deleteTask={this.deleteTask} tasks={this.state.tasks} />
@@ -303,7 +304,7 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/login" />
           }
         }} />
-         {/*<Route exact path="/events/:eventId(\d+)" render={(props) => {
+        {/*<Route exact path="/events/:eventId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <EventDetail {...props} deleteEvent={this.deleteEvent} events={this.state.events} />
           } else {

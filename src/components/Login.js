@@ -53,7 +53,7 @@ export default class Login extends Component {
                         id="password"
                         placeholder="Password"
                         required="" />
-                    <button type="submit">
+                    <button type="submit" className="btn btn-primary">
                         Sign in
                 </button>
                 </form>
