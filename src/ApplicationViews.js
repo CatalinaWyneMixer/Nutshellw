@@ -6,8 +6,8 @@ import DataManager from './modules/DataManager'
 import Login from './components/Login'
 // import TaskList from './components/TaskList'
 // import TaskForm from './Forms/TaskForm'
-// import MessageList from './components/MessageList'
-// import MessageForm from './Forms/MessageForm'
+import MessageList from './components/MessageList'
+import MessageForm from './Forms/MessageForm'
 import NewsList from './components/NewsList'
 import NewsForm from './Forms/NewsForm'
 // import JokeList from './components/JokeList'
@@ -221,23 +221,23 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/login" />
           }
         }} /> */}
-        {/* <Route exact path="/messages/new" render={(props) => {
+        <Route exact path="/messages/new" render={(props) => {
           if (this.isAuthenticated()) {
-            return <MessageForm {...props}
+            return <MessageList {...props}
               addMessage={this.addMessage} />
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
-        {/* <Route exact path="/messages/:messageId(\d+)" render={(props) => {
+        }} />
+        <Route exact path="/messages" render={(props) => {
           if (this.isAuthenticated()) {
-            return <MessageDetail {...props}
+            return <MessageForm {...props}
               deleteMessage={this.deleteMessage}
               messages={this.state.messages} />
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
+        }} />
         {/* <Route exact path="/tasks" render={(props) => {
           if (this.isAuthenticated()) {
             return <TaskList {...props}

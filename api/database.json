@@ -15,7 +15,14 @@
       "id": 2
     }
   ],
-  "messages": [],
+  "messages": [
+    {
+      "id": 1,
+      "to": "John",
+      "message": "you are cool",
+      "date": "2018-09-04"
+    }
+  ],
   "tasks": [],
   "jokes": [],
   "events": [],
