@@ -15,6 +15,7 @@ import NewsDetail from './components/news/NewsDetail'
 // import JokeForm from './components/jokes/JokeForm'
 import EventList from './components/events/EventList'
 import EventForm from './components/events/EventForm'
+import EventDetail from './components/events/EventDetails'
 
 export default class ApplicationViews extends Component {
 
@@ -247,7 +248,7 @@ export default class ApplicationViews extends Component {
           } else {
             return <Redirect to="/login" />
           }
-        }} /> 
+        }} />
        <Route exact path="/tasks/new" render={(props) => {
           if (this.isAuthenticated()) {
             return <TaskForm {...props}
@@ -304,13 +305,13 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/login" />
           }
         }} />
-        {/*<Route exact path="/events/:eventId(\d+)" render={(props) => {
+        <Route exact path="/events/:eventId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <EventDetail {...props} deleteEvent={this.deleteEvent} events={this.state.events} />
           } else {
             return <Redirect to="/login" />
           }
-        }} />*/}
+        }} />
         {/* <Route exact path="/friends" render={(props) => {
           if (this.isAuthenticated()) {
             return <FriendList {...props}

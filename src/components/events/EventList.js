@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import events_pic from "./events_pic.jpg"
 import { Link } from "react-router-dom"
 import './Event.css'
 
@@ -21,13 +22,16 @@ class EventList extends Component{
                     <div key={event.id} className="card">
                         <div className="card-body">
                             <h5 className="card-title">
-                                {/* <img src={events_pic} className="icon--dog" /> */}
                                 {event.name}
+                                {event.details}
                                     <Link className="nav-link" to={`/events/${event.id}`}>Details</Link>
                                 <a 
-                                    onClick={() => this.props.deleteevent(event.id)}
+                                    onClick={() => this.props.deleteEvent(event.id)}
                                     className="card-link">Rid</a>
                             </h5>
+                            <h4 className="card-tile">{event.date}
+                                {event.url}
+                                </h4>
                         </div>
                     </div>
                 )
