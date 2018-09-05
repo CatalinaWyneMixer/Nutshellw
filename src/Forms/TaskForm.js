@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import "../components/css/Login.css"
 
+
 export default class TaskForm extends Component {
     // Set initial state
     state = {
@@ -21,17 +22,14 @@ export default class TaskForm extends Component {
      */
     constructNewTask = evt => {
         evt.preventDefault()
-        if (this.state.task === "") {
-            window.alert("Please enter task")
-        } else {
             const task = {
-                name: this.state.task1Name,
+                name: this.state.taskName,
+                date: this.state.taskDate,
             }
 
             // Create the animal and redirect user to animal list
             this.props.addTask(task).then(() => this.props.history.push("/tasks"))
         }
-    }
 
     render() {
         return (
@@ -40,29 +38,31 @@ export default class TaskForm extends Component {
                     <div className="form-group">
                         <label htmlFor="taskName">Task name</label>
                         <input type="text" required="true"
-                               className="form-control"
-                               onChange={this.handleFieldChange}
-                               id="taskName"
-                               placeholder="Task name" />
+                            className="form-control"
+                            onChange={this.handleFieldChange}
+                            id="taskName"
+                            placeholder="Task name" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="dueDate">Due Date </label>
                         <input type="date" required="true"
-                               className="form-control"
-                               onChange={this.handleFieldChange}
-                               id="" placeholder="Pick date here" />
+                            className="form-control"
+                            onChange={this.handleFieldChange}
+                            id="taskDate" placeholder="Pick date here" />
                     </div>
-                    <div className="form-group">
-                    <label htmlFor="employee">Assign to User</label>
+                    {/* <div className="form-group">
+                        <label htmlFor="employee">Assign to User</label>
                         <select defaultValue="" name="task" id="task"
-                                onChange={this.handleFieldChange}>
+                            onChange={this.handleFieldChange}>
                             <option value="">Select a NewTask</option>
-                        {
-                            // this.props.events.map(e => <option key={e.id} id={e.id}>{e.name}</option>)
-                        }
-                        </select>
-                        </div>
-                    <button type="submit" onClick={this.constructNewTask} className="btn btn-primary">Submit</button>
+                            {/* {
+                                this.props.addTasks.map(e => <option key={e.id} id={e.id}>{e.name}</option>)
+                            } */}
+                        {/* </select>
+                    </div> */} 
+                    {/* } */}
+
+                    <button type="submit" onClick={this.constructNewTask} className="btn btn-primary">Add Task</button>
                 </form>
             </React.Fragment>
         )
