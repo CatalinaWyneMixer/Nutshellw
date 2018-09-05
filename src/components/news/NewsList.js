@@ -50,7 +50,7 @@ export default class NewsList extends Component {
                     <button type="button"
                         className="btn btn-success"
                         onClick={() => {
-                            this.props.history.push("/news/new")
+                            this.props.history.push("/news/newChat")
                         }
                         }>
                         Create New Article
