@@ -1,20 +1,5 @@
 {
-  "news": [
-    {
-      "title": "asdf",
-      "date": "2018-09-04",
-      "URL": "asdf",
-      "Content": "asdf",
-      "id": 1
-    },
-    {
-      "title": "asdf",
-      "date": "2018-09-04",
-      "URL": "asdf",
-      "Content": "asdf",
-      "id": 2
-    }
-  ],
+  "news": [],
   "messages": [
     {
       "id": 1,
