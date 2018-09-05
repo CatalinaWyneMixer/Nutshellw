@@ -10,6 +10,14 @@
   ],
   "tasks": [],
   "jokes": [],
-  "events": [],
+  "events": [
+    {
+      "eventName": "asdf",
+      "url": "asdf",
+      "date": "2018-09-05",
+      "details": "asdf",
+      "id": 1
+    }
+  ],
   "friends": []
 }
