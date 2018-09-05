@@ -1,18 +1,22 @@
 {
-  "news": [],
-  "messages": [],
-  "tasks": [
+  "news": [
     {
-      "name": "project due",
-      "date": "2018-09-07",
+      "title": "asdf",
+      "date": "2018-09-04",
+      "URL": "asdf",
+      "Content": "asdf",
       "id": 1
     },
     {
-      "name": "meeting",
-      "date": "2018-09-14",
+      "title": "asdf",
+      "date": "2018-09-04",
+      "URL": "asdf",
+      "Content": "asdf",
       "id": 2
     }
   ],
+  "messages": [],
+  "tasks": [],
   "jokes": [],
   "events": [],
   "friends": []
