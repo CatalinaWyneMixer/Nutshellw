@@ -5,6 +5,7 @@ import DataManager from './modules/DataManager'
 // import FriendForm from './Forms/FriendForm'
 import Login from './components/Login'
 import TaskList from './components/TaskList'
+import TaskDetails from './components/TaskDetails'
 import TaskForm from './Forms/TaskForm'
 // import MessageList from './components/MessageList'
 // import MessageForm from './Forms/MessageForm'
@@ -257,13 +258,13 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/login" />
           }
         }} />
-        {/* <Route exact path="/tasks/:taskId(\d+)" render={(props) => {
+        <Route exact path="/tasks/:taskId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <TaskDetail {...props} deleteTask={this.deleteTask} tasks={this.state.tasks} />
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
+        }} />
         {/* <Route exact path="/jokes" render={(props) => {
           if (this.isAuthenticated()) {
             return <JokeList {...props}
