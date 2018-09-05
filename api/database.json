@@ -1,26 +1,29 @@
 {
-  "news": [
-    {
-      "title": "asdf",
-      "date": "2018-09-04",
-      "URL": "asdf",
-      "Content": "asdf",
-      "id": 1
-    },
-    {
-      "title": "asdf",
-      "date": "2018-09-04",
-      "URL": "asdf",
-      "Content": "asdf",
-      "id": 2
-    }
-  ],
+  "news": [],
   "messages": [
     {
       "id": 1,
-      "to": "John",
+      "userName": "John",
       "message": "you are cool",
       "date": "2018-09-04"
+    },
+    {
+      "id": 2,
+      "to": "John Wood",
+      "message": "John Wood test",
+      "date": ""
+    },
+    {
+      "id": 3,
+      "to": "Test",
+      "message": "Test",
+      "date": ""
+    },
+    {
+      "id": 4,
+      "to": "test",
+      "message": "test",
+      "date": ""
     }
   ],
   "tasks": [
@@ -46,6 +49,13 @@
       "name": "asdf",
       "date": "2018-09-05",
       "id": 1
+    },
+    {
+      "eventName": "test",
+      "url": "test.com",
+      "date": "0009-01-31",
+      "details": "test",
+      "id": 2
     }
   ],
   "friends": []
