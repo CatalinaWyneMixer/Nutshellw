@@ -24,8 +24,8 @@ export default class MessageForm extends Component {
             date: this.state.messageDate
         }
 
-        this.props.addMessages(messages)
-        .then(() => this.props.history.push("/messages/new"))
+        this.props.addMessage(messages)
+        .then(() => this.props.history.push("/messages"))
     }
 
     render() {
@@ -63,7 +63,7 @@ export default class MessageForm extends Component {
                         </section>
                     </div>
                     <p></p>
-                    <button type="submit" onClick={this.addMessage} className="btn btn-primary">Send Message</button>
+                    <button type="submit" onClick={this.constructNewMessage} className="btn btn-primary">Send Message</button>
                 </form>
             </React.Fragment>
         )
