@@ -5,13 +5,26 @@
   "jokes": [],
   "events": [
     {
+      "url": "rocks",
+      "date": "2018-09-05",
       "id": 1
     },
     {
+      "url": "fasdf",
+      "date": "2018-09-06",
       "id": 2
     },
     {
+      "eventName": "asdf",
+      "url": "fff",
+      "date": "2018-09-06",
       "id": 3
+    },
+    {
+      "eventName": "adsfa",
+      "url": "fdd",
+      "date": "2018-09-06",
+      "id": 4
     }
   ],
   "friends": []

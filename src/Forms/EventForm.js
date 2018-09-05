@@ -1,13 +1,12 @@
 import React, { Component } from "react"
 import "../components/css/Login.css"
-import DropdownDate from 'react-dropdown-date'
 
 export default class EventForm extends Component {
     // Set initial state
     state = {
         eventName: "",
         url: "",
-        date: ""
+        date: "",
     }
 
     // Update state whenever an input field is edited
@@ -27,7 +26,9 @@ export default class EventForm extends Component {
             window.alert("Please input")
         } else {
             const event = {
-                name: this.state.eventlName,
+                eventName: this.state.eventName,
+                url: this.state.url,
+                date: this.state.date
             }
 
             // Create the animal and redirect user to animal list
@@ -42,7 +43,6 @@ export default class EventForm extends Component {
                     <div className="form-group">
                         <label htmlFor="eventName">Event name</label>
                         <input type="text" required="true"
-                            className="form-control"
                             onChange={this.handleFieldChange}
                             id="eventName"
                             placeholder="Event name" />
@@ -50,16 +50,19 @@ export default class EventForm extends Component {
                     <div className="form-group">
                         <label htmlFor="url">URL </label>
                         <input type="text" required="true"
-                            className="form-control"
                             onChange={this.handleFieldChange}
-                            id="breed" placeholder="Type URL here" />
+                            id="url"
+                            placeholder="Type URL here" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="date">Date </label>
                         <input type="date" required="true"
-                            className="form-control" />
+                             onChange={this.handleFieldChange}
+                             id="date"/>
+
                     </div>
-                    <button type="submit" onClick={this.constructNewEvent} className="btn btn-primary">Submit</button>
+                    <button type="submit" onClick={this.constructNewEvent}
+                    className="btn btn-primary">Submit</button>
 
 
                 </form>
