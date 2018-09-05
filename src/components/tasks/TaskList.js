@@ -44,7 +44,7 @@ class TaskList extends Component {
 
                                     {/* <Link className="nav-link" to={`/tasks/${task.id}`}>Details</Link> */}
                                 <button
-                                    onClick={() => this.props.deletetask(task.id)}
+                                    onClick={() => this.props.deleteTask(task.id)}
                                     className="card-link">Delete Task</button>
                                     </h5>
                         </div>
