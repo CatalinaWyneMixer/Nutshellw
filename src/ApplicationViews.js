@@ -10,6 +10,7 @@ import TaskForm from './Forms/TaskForm'
 // import MessageForm from './Forms/MessageForm'
 import NewsList from './components/NewsList'
 import NewsForm from './Forms/NewsForm'
+import NewsDetail from './components/NewsDetail'
 // import JokeList from './components/JokeList'
 // import JokeForm from './Forms/JokeForm'
 import EventList from './components/EventList'
@@ -203,7 +204,7 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/login" />
           }
         }} />
-        {/* <Route exact path="/news/:newsId(\d+)" render={(props) => {
+        <Route exact path="/news/:newsId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <NewsDetail {...props}
               deleteNews={this.deleteNews}
@@ -211,7 +212,7 @@ export default class ApplicationViews extends Component {
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
+        }} />
         {/* <Route exact path="/messages" render={props => {
           if (this.isAuthenticated()) {
             return <MessageList {...props}
