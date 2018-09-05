@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom"
+import './News.css'
 
 
 export default class NewsList extends Component {
@@ -56,21 +57,21 @@ export default class NewsList extends Component {
                                 </button>
                 </div>
                 <hr />
-                <section className="news">
+                <section>
                     {
                         <div>
-                            <h1 className="header">News:</h1>
+                            <h1 className="header">Breaking News:</h1>
                             <section className="news">
                                 {
                                     this.props.news.map(news =>
-                                        <div id={`animal--${news.id}`} key={news.id} className="card">
-                                            <div className="card-body">
-                                                <h2 className="card-title">
+                                        <div id={`animal--${news.id}`} key={news.id} className="newsCard">
+                                            <div className="newsCard-body">
+                                                <h2 className="newsCard-title">
                                                     <section>{news.title}</section>
                                                     <h5>{news.date}</h5>
-                                                    <Link className="nav-link" to={`/news/${news.id}`}>Details</Link>
-                                                        <button onClick={() => this.props.deleteNews(news.id)}
-                                                            className="card-link">Delete</button>
+                                                    <Link className="cardnav-link" to={`/news/${news.id}`}>Details</Link>
+                                                        <h6><button onClick={() => this.props.deleteNews(news.id)}
+                                                            className="newsCard-link">Delete</button></h6>
                                                 </h2>
                                             </div>
                                         </div>

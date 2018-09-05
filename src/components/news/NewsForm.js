@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import "../login/Login.css"
 
 export default class NewsForm extends Component {
 
@@ -37,7 +38,7 @@ export default class NewsForm extends Component {
                     <div className="form-group">
                         <section className="titleField">
                             <label htmlFor="userID"></label>
-                            <label htmlFor="newsTitle">News Title:</label>
+                            <h5 htmlFor="newsTitle">News Title:</h5>
                             <p></p>
                             <input type="text" required="true"
                                 className="form-control"
@@ -50,12 +51,12 @@ export default class NewsForm extends Component {
                     <p></p>
                     <div className="form-group">
                         <section>
-                            <label htmlFor="newsDate">News Date:</label>
+                            <h5 htmlFor="newsDate">Date:</h5>
                             <input type="date" required="true"
                                 className="form-control"
                                 onChange={this.handleFieldChange}
                                 id="newsDate" />
-                            <label htmlFor="newsURL">News URL:</label>
+                            <h5 htmlFor="newsURL">News URL:</h5>
                             <input type="text" required="true"
                                 className="form-control"
                                 onChange={this.handleFieldChange}
@@ -66,7 +67,7 @@ export default class NewsForm extends Component {
                     <div className="form-group">
                         <section className="contentField">
                             <p></p>
-                            <label htmlFor="newsContent">News Content:</label>
+                            <h5 htmlFor="newsContent">News Content:</h5>
                             <p></p>
                             <textarea 
                             className="form-control"

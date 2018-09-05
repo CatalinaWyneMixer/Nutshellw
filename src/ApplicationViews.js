@@ -17,6 +17,7 @@ import EventList from './components/EventList'
 import EventForm from './Forms/EventForm'
 import EventDetail from './components/EventDetails'
 
+
 export default class ApplicationViews extends Component {
 
   // Check if credentials are in local storage
