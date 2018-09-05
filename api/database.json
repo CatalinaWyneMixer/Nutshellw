@@ -1,0 +1,30 @@
+{
+  "news": [
+    {
+      "title": "asdf",
+      "date": "2018-09-04",
+      "URL": "asdf",
+      "Content": "asdf",
+      "id": 1
+    },
+    {
+      "title": "asdf",
+      "date": "2018-09-04",
+      "URL": "asdf",
+      "Content": "asdf",
+      "id": 2
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "to": "John",
+      "message": "you are cool",
+      "date": "2018-09-04"
+    }
+  ],
+  "tasks": [],
+  "jokes": [],
+  "events": [],
+  "friends": []
+}
