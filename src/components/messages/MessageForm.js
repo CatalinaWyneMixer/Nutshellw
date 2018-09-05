@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 export default class MessageForm extends Component {
+    //set initial state here
 
     state = {
         messageId: "",
@@ -24,8 +25,8 @@ export default class MessageForm extends Component {
             date: this.state.messageDate
         }
 
-        this.props.addMessages(messages)
-        .then(() => this.props.history.push("/messages/new"))
+        this.props.addMessage(messages)
+            .then(() => this.props.history.push("/messages/new"))
     }
 
     render() {
@@ -55,15 +56,15 @@ export default class MessageForm extends Component {
                             <p></p>
                             <label htmlFor="message">Message:</label>
                             <p></p>
-                            <textarea 
-                            className="form-control"
-                            onChange={this.handleFieldChange}
-                            id="message" 
-                            placeholder="..." rows="5" cols="70"></textarea>
+                            <textarea
+                                className="form-control"
+                                onChange={this.handleFieldChange}
+                                id="message"
+                                placeholder="..." rows="5" cols="70"></textarea>
                         </section>
                     </div>
                     <p></p>
-                    <button type="submit" onClick={this.addMessage} className="btn btn-primary">Send Message</button>
+                    <button type="submit" onClick={this.constructNewMessage} className="btn btn-primary">Send Message</button>
                 </form>
             </React.Fragment>
         )

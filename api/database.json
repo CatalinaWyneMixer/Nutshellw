@@ -21,6 +21,12 @@
       "to": "John",
       "message": "you are cool",
       "date": "2018-09-04"
+    },
+    {
+      "id": 2,
+      "to": "hello",
+      "message": "test 1 2",
+      "date": ""
     }
   ],
   "tasks": [],
@@ -35,10 +41,10 @@
     },
     {
       "eventName": "asdf",
-      "url": "asdf.ff",
-      "date": "2018-09-14",
-      "details": "asdf",
-      "id": 2
+      "url": "ff.ff",
+      "date": "2018-09-26",
+      "details": "jfjf",
+      "id": 3
     }
   ],
   "friends": []
