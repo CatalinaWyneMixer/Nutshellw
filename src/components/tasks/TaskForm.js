@@ -1,5 +1,10 @@
 import React, { Component } from "react"
+<<<<<<< HEAD:src/Forms/TaskForm.js
 // import "../components/css/task.css"
+=======
+import "../login/Login.css"
+
+>>>>>>> master:src/components/tasks/TaskForm.js
 
 export default class TaskForm extends Component {
     // Set initial state

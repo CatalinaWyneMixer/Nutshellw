@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+<<<<<<< HEAD:src/components/TaskList.js
 // import "../components/css/task.css"
 class TaskList extends Component {
     state = {
@@ -6,6 +7,8 @@ class TaskList extends Component {
         id: "",
         isChecked: false
     }
+=======
+>>>>>>> master:src/components/tasks/TaskList.js
 
     toggleCheckboxChange = () => {
         const { handleCheckboxChange, label } = this.props;
