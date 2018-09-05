@@ -12,7 +12,7 @@
     color: rgb(240, 4, 4)
 }
 
-.card-link {
+/* .card-link {
     margin: 4px 0 0 0;
     font-size: 2em;
     color: red;
@@ -20,7 +20,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 1em;
     border-radius: 50% 
-}
+} */
 .eventButton {
     display: flex;
     justify-content: space-evenly;
