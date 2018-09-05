@@ -3,8 +3,7 @@ import React, { Component } from 'react'
 export default class MessageForm extends Component {
 
     state = {
-        messageId: "",
-        messageTo: "",
+        userName: "",
         message: "",
         messageDate: ""
     }
@@ -18,8 +17,7 @@ export default class MessageForm extends Component {
     constructNewMessage = evt => {
         evt.preventDefault()
         const messages = {
-            id: this.state.messageId,
-            to: this.state.messageTo,
+            userName: this.state.userName,
             message: this.state.message,
             date: this.state.messageDate
         }
