@@ -1,0 +1,41 @@
+{
+  "news": [
+    {
+      "title": "asdf",
+      "date": "2018-09-04",
+      "URL": "asdf",
+      "Content": "asdf",
+      "id": 1
+    },
+    {
+      "title": "asdf",
+      "date": "2018-09-04",
+      "URL": "asdf",
+      "Content": "asdf",
+      "id": 2
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "to": "John",
+      "message": "you are cool",
+      "date": "2018-09-04"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "second meeting",
+      "date": "2018-10-09",
+      "id": 1
+    },
+    {
+      "name": "project due",
+      "date": "2018-09-07",
+      "id": 2
+    }
+  ],
+  "jokes": [],
+  "events": [],
+  "friends": []
+}

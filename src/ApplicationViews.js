@@ -7,8 +7,8 @@ import Login from './components/login/Login'
 import TaskList from './components/tasks/TaskList'
 import TaskDetail from './components/tasks/TaskDetails'
 import TaskForm from './components/tasks/TaskForm'
-// import MessageList from './components/messages/MessageList'
-// import MessageForm from './components/messages/MessageForm'
+import MessageList from './components/messages/MessageList'
+import MessageForm from './components/messages/MessageForm'
 import NewsList from './components/news/NewsList'
 import NewsForm from './components/news/NewsForm'
 import NewsDetail from './components/news/NewsDetail'
@@ -224,23 +224,24 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/login" />
           }
         }} /> */}
-        {/* <Route exact path="/messages/new" render={(props) => {
+
+        <Route exact path="/messages" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <MessageList {...props}
+              messages={this.state.messages} />
+          } else {
+            return <Redirect to="/login" /> 
+          }
+        }} />
+        <Route exact path="/messages/new" render={(props) => {
           if (this.isAuthenticated()) {
             return <MessageForm {...props}
+              messages={this.state.messages}
               addMessage={this.addMessage} />
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
-        {/* <Route exact path="/messages/:messageId(\d+)" render={(props) => {
-          if (this.isAuthenticated()) {
-            return <MessageDetail {...props}
-              deleteMessage={this.deleteMessage}
-              messages={this.state.messages} />
-          } else {
-            return <Redirect to="/login" />
-          }
-        }} /> */}
+        }} />
         <Route exact path="/tasks" render={(props) => {
           if (this.isAuthenticated()) {
             return <TaskList {...props}
@@ -339,6 +340,6 @@ export default class ApplicationViews extends Component {
         }} /> */}
       </React.Fragment >
     )
+  
   }
 }
-
