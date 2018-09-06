@@ -120,17 +120,10 @@
       "eventId": 1
     },
     {
-<<<<<<< HEAD
-      "eventName": "Party",
-      "url": ".ASS",
-      "date": "2018-09-25",
-      "details": "bring a towel",
-=======
       "eventName": "john",
       "url": "test.com",
       "date": "2018-09-08",
       "details": "lets go drinking ",
->>>>>>> master
       "id": 2,
       "eventId": 1
     },
