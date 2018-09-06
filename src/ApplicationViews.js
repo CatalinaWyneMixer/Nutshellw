@@ -17,6 +17,7 @@ import JokeForm from './components/jokes/JokeForm'
 import EventList from './components/events/EventList'
 import EventForm from './components/events/EventForm'
 import EventDetail from './components/events/EventDetails'
+import EventEditForm from './components/events/EventEditForm'
 
 export default class ApplicationViews extends Component {
 
@@ -230,7 +231,7 @@ export default class ApplicationViews extends Component {
             return <MessageList {...props}
               messages={this.state.messages} />
           } else {
-            return <Redirect to="/login" /> 
+            return <Redirect to="/login" />
           }
         }} />
         <Route exact path="/messages/new" render={(props) => {
@@ -314,6 +315,13 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/login" />
           }
         }} />
+        <Route exact path="/events/edit/:eventId(\d+)" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <EventEditForm  {...props} editEvent={this.editEvent} events={this.state.events} />
+          } else {
+            return <Redirect to="/login" />
+          }
+        }} />
         {/* <Route exact path="/friends" render={(props) => {
           if (this.isAuthenticated()) {
             return <FriendList {...props}
@@ -340,6 +348,6 @@ export default class ApplicationViews extends Component {
         }} /> */}
       </React.Fragment >
     )
-  
+
   }
 }

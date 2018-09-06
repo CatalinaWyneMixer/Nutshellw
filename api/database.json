@@ -1,8 +1,68 @@
 {
   "news": [],
-  "messages": [],
-  "tasks": [],
+  "messages": [
+    {
+      "id": 1,
+      "userName": "John",
+      "message": "you are cool",
+      "date": "2018-09-04"
+    },
+    {
+      "id": 2,
+      "to": "John Wood",
+      "message": "John Wood test",
+      "date": ""
+    },
+    {
+      "id": 3,
+      "to": "Test",
+      "message": "Test",
+      "date": ""
+    },
+    {
+      "id": 4,
+      "to": "test",
+      "message": "test",
+      "date": ""
+    }
+  ],
+  "tasks": [
+    {
+      "name": "capstone",
+      "date": "2018-09-28",
+      "id": 4
+    },
+    {
+      "name": "jingle bells",
+      "date": "2018-09-13",
+      "id": 5
+    }
+  ],
   "jokes": [],
-  "events": [],
+  "events": [
+    {
+      "eventName": "fffeeee",
+      "url": "n.",
+      "date": "2018-09-13",
+      "details": "asdf",
+      "id": 1,
+      "eventId": 1
+    },
+    {
+      "eventName": "Party",
+      "url": "asdf",
+      "date": "2018-09-25",
+      "details": "bring a towle",
+      "id": 2,
+      "eventId": 1
+    },
+    {
+      "eventName": "pool part",
+      "url": "urh.com",
+      "date": "2018-09-25",
+      "details": "bring a towel",
+      "id": 3
+    }
+  ],
   "friends": []
 }

@@ -22,10 +22,10 @@ export default class EventForm extends Component {
         invoking the function reference passed from parent component
      */
 
-     //setting default input conditions - throwing alert
+     //setting default input conditions - throwing alert.   MIND THE BANG!
     constructNewEvent = evt => {
         evt.preventDefault()
-        if (this.state.url === "" ||this.state.date === "" || this.state.eventName === "" || this.state.details === "") {
+        if (this.state.url === "" ||this.state.date === "" || this.state.eventName === "" || this.state.details === "" || !this.state.url.includes('.')) {
             window.alert("Please input all fields ya jerk!")
         } else {
             const event = {
