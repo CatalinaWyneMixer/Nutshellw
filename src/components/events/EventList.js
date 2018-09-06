@@ -18,17 +18,20 @@ class EventList extends Component{
             </div>
             <section className="events">
             {
+                //sort by date?
+                // it is easier to sort by server call
+
                 this.props.events.map(event =>
                     <div key={event.id} className="card">
                         <div className="card-body">
                             <h5 className="card-title">
-                                {event.eventName}
+                                {event.date}
                                     <Link className="nav-link" to={`/events/${event.id}`}>Details</Link>
                                     </h5>
                                 <button
                                     onClick={() => this.props.deleteEvent(event.id)}
                                     className="nav-link-quit">Quit Event</button>
-                            <h4 className="card-tile">{event.date}
+                            <h4 className="card-tile">{event.eventName}
                                 </h4>
                         </div>
                     </div>

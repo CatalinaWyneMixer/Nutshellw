@@ -109,19 +109,19 @@ export default class ApplicationViews extends Component {
     }))
 
   addEvent = event => DataManager.add("events", event)
-    .then(() => DataManager.getAll("events"))
+    .then(() => DataManager.getAllAscend("events"))
     .then(events => this.setState({
       events: events
     }))
 
   deleteEvent = id => DataManager.delete("events", id)
-    .then(() => DataManager.getAll("events"))
+    .then(() => DataManager.getAllAscend("events"))
     .then(events => this.setState({
       events: events
     }))
 
   editEvent = (id, events) => DataManager.edit("events", id, events)
-    .then(() => DataManager.getAll("events"))
+    .then(() => DataManager.getAllAscend("events"))
     .then(events => this.setState({
       events: events
     }))
@@ -168,7 +168,7 @@ export default class ApplicationViews extends Component {
                     newState.jokes = allJokes
                   })
                   .then(() => {
-                    DataManager.getAll("events")
+                    DataManager.getAllAscend("events")
                       .then(allEvents => {
                         newState.events = allEvents
                       })
