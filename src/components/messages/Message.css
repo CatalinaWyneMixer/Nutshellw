@@ -1,3 +1,7 @@
 .formCard {
     border: solid black;
 }
+
+.nav-link-delete {
+    color: red;
+}

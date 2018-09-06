@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import './Message.css'
-
-export default class MessageList extends Component {
+class MessageList extends Component{
 
     render() {
+
+        const credentials = JSON.parse(localStorage.getItem('credentials'))
 
         return (
             <React.Fragment>
@@ -28,12 +29,14 @@ export default class MessageList extends Component {
                                         <div className="messageCard-body">
                                             <p className="messageCard-title">
                                                 <section className="formCard">
-                                                    <h5>{messages.to}</h5>
+                                                    <h5> From: {credentials.email}</h5>
+                                                    <h6> to: {messages.to}</h6>
                                                     <h6>{messages.message}</h6>
-                                                    <p>{messages.date}</p>
-                                                    <p>{Date()}</p>
-                                                    <h6><button onClick={() => this.props.deletemessage(messages.id)}
-                                                        className="newsCard-link">Delete</button></h6>
+                                                    <h6>{Date()}</h6>
+                                                    <button
+                                                        onClick={() => this.props.deleteMessage(messages.id)
+                                                        .then(() => this.props.history.push("/messages"))}
+                                                         className="nav-link-delete">Delete</button>
                                                 </section>
                                             </p>
 
@@ -50,3 +53,5 @@ export default class MessageList extends Component {
         )
     }
 }
+
+export default MessageList
