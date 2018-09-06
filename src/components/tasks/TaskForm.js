@@ -6,7 +6,9 @@ export default class TaskForm extends Component {
     // Set initial state
     state = {
         task: "",
-        id: ""
+        id: "",
+        detail: "",
+        isChecked: false
     }
 
 
@@ -26,6 +28,8 @@ export default class TaskForm extends Component {
         const task = {
             name: this.state.taskName,
             date: this.state.taskDate,
+            detail: this.state.taskDetail,
+            isChecked: false
         }
 
         // Create the task and redirect user to task list
@@ -52,6 +56,13 @@ export default class TaskForm extends Component {
                             className="form-control"
                             onChange={this.handleFieldChange}
                             id="taskDate" placeholder="Pick date here" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="details">Details </label>
+                        <input type="text" required="true"
+                            className="form-control"
+                            onChange={this.handleFieldChange}
+                            id="taskDetail" placeholder="Enter Details Here" />
                     </div>
                     {/* <div className="form-group">
                         <label htmlFor="employee">Assign to User</label>

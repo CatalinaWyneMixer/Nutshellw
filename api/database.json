@@ -28,25 +28,25 @@
   ],
   "tasks": [
     {
-      "name": "capstone",
-      "date": "2018-09-28",
-      "id": 4
+      "name": "meeting",
+      "date": "2018-09-10",
+      "detail": "aaa",
+      "isChecked": false,
+      "id": 9
     },
     {
-<<<<<<< HEAD
+      "name": "second meeting",
+      "date": "2018-09-21",
+      "detail": "bbbb",
+      "isChecked": false,
+      "id": 10
+    },
+    {
       "name": "project due",
       "date": "2018-09-07",
-      "id": 5
-    },
-    {
-      "name": "New Project",
-      "date": "2018-09-24",
-      "id": 6
-=======
-      "name": "jingle bells",
-      "date": "2018-09-13",
-      "id": 5
->>>>>>> master
+      "detail": "hhhhh",
+      "isChecked": false,
+      "id": 11
     }
   ],
   "jokes": [],
