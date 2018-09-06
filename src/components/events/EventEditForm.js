@@ -7,6 +7,7 @@ export default class EventEditForm extends Component {
     state = {
 
     }
+
 // update state upon edits to fields
 handleFieldChange = evt => {
     const stateToChange = {}
@@ -18,22 +19,6 @@ componentDidMount() {
     // console.log(this.state)
     const event = this.props.events.find(a => a.id === parseInt(this.props.match.params.eventId))
     this.setState(event);
-}
-constructNewAnimal = (evt) => {
-    evt.preventDefault()
-    console.log(this.state)
-    let newEvent = {
-        eventName: this.state.eventName,
-        eventId: this.props.events.find(e => e.name === this.state.event).id,
-        date: this.state.date,
-        url: this.state.url,
-        details: this.state.details,
-        id: this.state.id
-    }
-    this.props.editEvent(newEvent.id, newEvent)
-    .then(()=>{
-        this.props.history.push(`/events/${this.props.match.params.eventId}`)
-    })
 }
 constructNewEvent = (evt) => {
     evt.preventDefault()
@@ -83,12 +68,12 @@ render() {
                     <label htmlFor="date">Date </label>
                     <input type="date" required="true"
                          onChange={this.handleFieldChange}
-                         id={this.state.date}/>
+                         id="date"
+                         placeholder={this.state.date}/>
 
                 </div>
                 <button type="submit" onClick={this.constructNewEvent}
                 className="btn btn-primary">Submit</button>
-
 
             </form>
         </React.Fragment>
