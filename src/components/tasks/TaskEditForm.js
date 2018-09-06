@@ -43,10 +43,9 @@ constructNewTask = (evt) => {
         date: this.state.date,
         id: this.state.id,
         details: this.state.details,
-        // url: this.state.url,
 
     }
-    this.props.editEvent(newTask.id, newTask)
+    this.props.editTask(newTask.id, newTask)
     .then(()=>{
         this.props.history.push(`/tasks/${this.props.match.params.taskId}`)
     })
