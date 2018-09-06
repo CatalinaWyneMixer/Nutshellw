@@ -9,6 +9,7 @@ import TaskForm from './components/tasks/TaskForm'
 import TaskDetail from './components/tasks/TaskDetails'
 import MessageList from './components/messages/MessageList'
 import MessageForm from './components/messages/MessageForm'
+import MessageEditForm from './components/messages/MessageEditForm'
 import NewsList from './components/news/NewsList'
 import NewsForm from './components/news/NewsForm'
 import NewsDetail from './components/news/NewsDetail'
@@ -223,7 +224,6 @@ export default class ApplicationViews extends Component {
         <Route exact path="/messages" render={(props) => {
           if (this.isAuthenticated()) {
             return <MessageList {...props}
-            editMessage ={this.editMessage}
             deleteMessage ={this.deleteMessage}
             messages={this.state.messages} />
           } else {
@@ -233,8 +233,16 @@ export default class ApplicationViews extends Component {
         <Route exact path="/messages/new" render={(props) => {
           if (this.isAuthenticated()) {
             return <MessageForm {...props}
+            editMessage ={this.editMessage}
               messages={this.state.messages}
               addMessage={this.addMessage} />
+          } else {
+            return <Redirect to="/login" />
+          }
+        }} />
+        <Route exact path="/messages/edit/:messageId(\d+)" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <MessageEditForm  {...props} editMessage={this.editMessage} messages={this.state.messages} />
           } else {
             return <Redirect to="/login" />
           }
