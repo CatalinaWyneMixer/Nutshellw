@@ -1,23 +1,8 @@
 {
-  "news": [],
-  "messages": [],
-  "tasks": [],
-  "jokes": [
-    {
-      "setup": "knockknock",
-      "punchline": "whothere",
-      "id": 1
-    }
-  ],
-  "events": [
-    {
-      "eventName": "go ahead !",
-      "url": "makemyday.com",
-      "date": "2018-09-19",
-      "details": "fun",
-      "id": 1,
-      "eventId": 1
-    }
-  ],
-  "friends": []
+ "news": [],
+ "messages": [],
+ "tasks": [],
+ "jokes": [],
+ "events": [],
+ "friends": []
 }
