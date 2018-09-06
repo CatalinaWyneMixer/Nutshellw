@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 // the edit button will live on Event Detail
 
-export default class EventEditForm extends Component {
+export default class TaskEditForm extends Component {
 
     state = {
 
@@ -19,7 +19,7 @@ componentDidMount() {
     const task = this.props.tasks.find(a => a.id === parseInt(this.props.match.params.taskId))
     this.setState(task);
 }
-constructNewAnimal = (evt) => {
+constructNewTask = (evt) => {
     evt.preventDefault()
     console.log(this.state)
     let newTask = {
@@ -43,7 +43,7 @@ constructNewTask = (evt) => {
         date: this.state.date,
         id: this.state.id,
         details: this.state.details,
-        url: this.state.url,
+        // url: this.state.url,
 
     }
     this.props.editEvent(newTask.id, newTask)
@@ -68,7 +68,8 @@ render() {
                     <label htmlFor="date">Due Date </label>
                     <input type="date" required="true"
                          onChange={this.handleFieldChange}
-                         id={this.state.date}/>
+                         id="date"
+                    placeholder={this.state.details}/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="details">Details</label>
