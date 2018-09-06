@@ -219,20 +219,13 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/" />
           }
         }} />
-        {/* <Route exact path="/messages" render={props => {
-          if (this.isAuthenticated()) {
-            return <MessageList {...props}
-              deleteMessage={this.deleteMessage}
-              messages={this.state.messages} />
-          } else {
-            return <Redirect to="/" />
-          }
-        }} /> */}
+        
 
         <Route exact path="/messages" render={(props) => {
           if (this.isAuthenticated()) {
             return <MessageList {...props}
-              messages={this.state.messages} />
+            deleteMessage ={this.deleteMessage}
+            messages={this.state.messages} />
           } else {
             return <Redirect to="/" />
           }
