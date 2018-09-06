@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-
-export default class MessageList extends Component {
+import './Message.css'
+class MessageList extends Component{
 
     render() {
+
+        const credentials = JSON.parse(localStorage.getItem('credentials'))
 
         return (
             <React.Fragment>
@@ -19,22 +21,24 @@ export default class MessageList extends Component {
 
                 <section>
                     <div>
-                        <h1 className="formHeader">What everyone is saying</h1>
+                        <h2 className="formHeader">What everyone is saying</h2>
                         <section className="messages">
                             {
                                 this.props.messages.map(messages =>
-                                    <div id={`animal--${messages.id}`} key={messages.id} className="messageCard">
+                                    <div id={`message--${messages.id}`} key={messages.id} className="messageCard">
                                         <div className="messageCard-body">
-                                            <h2 className="messageCard-title">
-                                                <section>{messages.id}
-                                                    <h5>{messages.to}</h5>
+                                            <p className="messageCard-title">
+                                                <section className="formCard">
+                                                    <h5> From: {credentials.email}</h5>
+                                                    <h6> to: {messages.to}</h6>
                                                     <h6>{messages.message}</h6>
-                                                    <p>{messages.date}</p>
-                                                    <h6><button onClick={() => this.props.deleteNews(messages.id)}
-                                                        className="newsCard-link">Delete</button></h6>
-
+                                                    <h6>{Date()}</h6>
+                                                    <button
+                                                        onClick={() => this.props.deleteMessage(messages.id)
+                                                        .then(() => this.props.history.push("/messages"))}
+                                                         className="nav-link-delete">Delete</button>
                                                 </section>
-                                            </h2>
+                                            </p>
 
                                         </div>
                                     </div>
@@ -49,3 +53,5 @@ export default class MessageList extends Component {
         )
     }
 }
+
+export default MessageList
