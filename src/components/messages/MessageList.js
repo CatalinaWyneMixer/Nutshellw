@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Message.css'
 
 export default class MessageList extends Component {
 
@@ -19,22 +20,22 @@ export default class MessageList extends Component {
 
                 <section>
                     <div>
-                        <h1 className="formHeader">What everyone is saying</h1>
+                        <h2 className="formHeader">What everyone is saying</h2>
                         <section className="messages">
                             {
                                 this.props.messages.map(messages =>
-                                    <div id={`animal--${messages.id}`} key={messages.id} className="messageCard">
+                                    <div id={`message--${messages.id}`} key={messages.id} className="messageCard">
                                         <div className="messageCard-body">
-                                            <h2 className="messageCard-title">
-                                                <section>{messages.id}
+                                            <p className="messageCard-title">
+                                                <section className="formCard">
                                                     <h5>{messages.to}</h5>
                                                     <h6>{messages.message}</h6>
                                                     <p>{messages.date}</p>
-                                                    <h6><button onClick={() => this.props.deleteNews(messages.id)}
+                                                    <p>{Date()}</p>
+                                                    <h6><button onClick={() => this.props.deletemessage(messages.id)}
                                                         className="newsCard-link">Delete</button></h6>
-
                                                 </section>
-                                            </h2>
+                                            </p>
 
                                         </div>
                                     </div>
