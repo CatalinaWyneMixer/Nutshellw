@@ -5,6 +5,8 @@ import './NavBar.css'
 
 
 class NavBar extends Component {
+
+
     render() {
         return (
             <nav className="navbar navbar-light fixed-top light-blue flex-md-nowrap p-0 shadow">
@@ -34,6 +36,7 @@ class NavBar extends Component {
                 </ul>
                 <button onClick={() => {
                     localStorage.clear("credentials")
+                    document.location.href='http://localhost:3000'
                 }}
                     className="logoutButton">Logout</button>
             </nav>

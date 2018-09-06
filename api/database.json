@@ -1,5 +1,27 @@
 {
-  "news": [],
+  "users": [
+    {
+      "email": "aartkeen@ut.utm.edu",
+      "password": "asdfasdf",
+      "id": 2
+    }
+  ],
+  "news": [
+    {
+      "title": "Happy Little Accidents",
+      "date": "2018-09-05",
+      "URL": "www.bobross.com",
+      "Content": "asdf",
+      "id": 1
+    },
+    {
+      "title": "asdf",
+      "date": "2018-09-06",
+      "URL": "asdf",
+      "Content": "asdf",
+      "id": 2
+    }
+  ],
   "messages": [
     {
       "id": 3,
@@ -107,18 +129,38 @@
       "id": 4
     },
     {
-      "name": "jingle bells",
-      "date": "2018-09-13",
+      "name": "asdf",
+      "date": "2018-09-05",
       "id": 5
     }
   ],
   "jokes": [],
   "events": [
     {
+<<<<<<< HEAD
       "eventName": "pool part",
       "url": "urh.com",
       "date": "2018-09-25",
       "details": "bring a towel",
+=======
+      "name": "asdf",
+      "date": "2018-09-05",
+      "id": 1
+    },
+    {
+      "eventName": "john",
+      "url": "test.com",
+      "date": "2018-09-08",
+      "details": "lets go drinking ",
+      "id": 2,
+      "eventId": 1
+    },
+    {
+      "eventName": "asdf",
+      "url": "asdf",
+      "date": "2018-09-05",
+      "details": "asdf",
+>>>>>>> master
       "id": 3
     },
     {
