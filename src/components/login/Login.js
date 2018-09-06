@@ -34,6 +34,10 @@ export default class Login extends Component {
         )
     }
 
+    handleButtonClick = () => {
+        document.location.href='http://localhost:3000/news'
+    }
+
     render() {
         return (
             <div className="loginForm">
@@ -53,7 +57,7 @@ export default class Login extends Component {
                         id="password"
                         placeholder="Password"
                         required="" />
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" onClick={this.handleButtonClick} className="btn btn-primary">
                         Sign in
                 </button>
                 </form>
