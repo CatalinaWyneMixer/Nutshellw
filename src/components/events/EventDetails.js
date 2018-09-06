@@ -19,17 +19,21 @@ export default class EventDetail extends Component {
                     <div className="card-body">
                         <h4 className="card-title">
                             <img src={events_pic} className="icon--event" />
-                            {event.date}
                         </h4>
                         <h6 className="card-title">{event.name}</h6>
-                        <h6 className="card-title">{event.details}</h6>
+                        <h6 className="card-title"></h6>
+                        <h6>{event.details},
+                        {event.date},
+                        {event.url}
+                        </h6>
+                        <h5>
                         <a href="#"
                             onClick={() => this.props.deleteEvent(event.id)
                                             .then(() => this.props.history.push("/events"))}
                             className="card-link">Delete</a>
                             <a href="#"
                             onClick={() => this.props.history.push(`/events/edit/${event.id}`)}
-                            className="card-link">Edit</a>
+                            className="card-link">Edit</a></h5>
                     </div>
                 </div>
             </section>
