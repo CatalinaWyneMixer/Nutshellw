@@ -23,7 +23,7 @@ constructNewAnimal = (evt) => {
     evt.preventDefault()
     console.log(this.state)
     let newEvent = {
-        name: this.state.name,
+        eventName: this.state.eventName,
         eventId: this.props.events.find(e => e.name === this.state.event).id,
         date: this.state.date,
         url: this.state.url,
@@ -39,7 +39,7 @@ constructNewEvent = (evt) => {
     evt.preventDefault()
     console.log(this.state)
     let newEvent = {
-        name: this.state.name,
+        eventName: this.state.eventName,
         eventId: this.props.events.find(e => e.name === this.state.event).id,
         date: this.state.date,
         id: this.state.id,
