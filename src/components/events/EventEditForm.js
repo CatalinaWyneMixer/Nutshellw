@@ -7,6 +7,7 @@ export default class EventEditForm extends Component {
     state = {
 
     }
+
 // update state upon edits to fields
 handleFieldChange = evt => {
     const stateToChange = {}
@@ -83,7 +84,8 @@ render() {
                     <label htmlFor="date">Date </label>
                     <input type="date" required="true"
                          onChange={this.handleFieldChange}
-                         id={this.state.date}/>
+                         id="date"
+                         placeholder={this.state.date}/>
 
                 </div>
                 <button type="submit" onClick={this.constructNewEvent}
