@@ -52,6 +52,8 @@ constructNewEvent = (evt) => {
         this.props.history.push(`/events/${this.props.match.params.eventId}`)
     })
 }
+
+// in this form be sure to add existing STATE INFO in PLACEHOLDER>
 render() {
     return (
         <React.Fragment>
@@ -61,27 +63,27 @@ render() {
                     <input type="text" required="true"
                         onChange={this.handleFieldChange}
                         id="eventName"
-                        placeholder="Event name" />
+                        placeholder={this.state.eventName} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="url">URL </label>
                     <input type="text" required="true"
                         onChange={this.handleFieldChange}
                         id="url"
-                        placeholder="Type URL here" />
+                        placeholder={this.state.url} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="details">Details</label>
                     <input type="text" required="true"
                         onChange={this.handleFieldChange}
                         id="details"
-                        placeholder="Add details" />
+                        placeholder={this.state.details}/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="date">Date </label>
                     <input type="date" required="true"
                          onChange={this.handleFieldChange}
-                         id="date"/>
+                         id={this.state.date}/>
 
                 </div>
                 <button type="submit" onClick={this.constructNewEvent}
