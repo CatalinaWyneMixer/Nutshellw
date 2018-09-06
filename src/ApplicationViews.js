@@ -17,6 +17,7 @@ import NewsDetail from './components/news/NewsDetail'
 import EventList from './components/events/EventList'
 import EventForm from './components/events/EventForm'
 import EventDetail from './components/events/EventDetails'
+import EventEditForm from './components/events/EventEditForm'
 
 export default class ApplicationViews extends Component {
 
@@ -310,6 +311,13 @@ export default class ApplicationViews extends Component {
         <Route exact path="/events/:eventId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <EventDetail {...props} deleteEvent={this.deleteEvent} events={this.state.events} />
+          } else {
+            return <Redirect to="/login" />
+          }
+        }} />
+        <Route exact path="/events/edit/:eventId(\d+)" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <EventEditForm  {...props} editEvent={this.editEvent} events={this.state.events} />
           } else {
             return <Redirect to="/login" />
           }

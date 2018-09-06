@@ -28,25 +28,6 @@
   ],
   "tasks": [
     {
-      "name": "project due",
-      "date": "2018-09-07",
-      "id": 2
-    },
-    {
-      "id": 2,
-      "to": "hello",
-      "message": "test 1 2",
-      "date": ""
-    },
-    {
-      "id": 3,
-      "to": "asdf",
-      "message": "matty said hi",
-      "date": ""
-    }
-  ],
-  "tasks": [
-    {
       "name": "capstone",
       "date": "2018-09-28",
       "id": 4
@@ -60,18 +41,26 @@
   "jokes": [],
   "events": [
     {
-      "eventName": "asdf",
-      "url": "asdf",
-      "date": "2018-09-05",
-      "details": "asdf",
+      "eventName": "ffff",
+      "url": "fff.com",
+      "date": "2018-09-14",
+      "details": "lots of fun",
       "id": 1
     },
     {
-      "eventName": "test",
-      "url": "test.com",
-      "date": "0009-01-31",
-      "details": "test",
-      "id": 2
+      "eventName": "Party",
+      "url": "asdf",
+      "date": "2018-09-25",
+      "details": "bring a towle",
+      "id": 2,
+      "eventId": 1
+    },
+    {
+      "eventName": "pool part",
+      "url": "urh.com",
+      "date": "2018-09-25",
+      "details": "bring a towel",
+      "id": 3
     }
   ],
   "friends": []

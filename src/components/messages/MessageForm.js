@@ -26,11 +26,7 @@ export default class MessageForm extends Component {
         }
 
         this.props.addMessage(messages)
-<<<<<<< HEAD
-            .then(() => this.props.history.push("/messages/new"))
-=======
         .then(() => this.props.history.push("/messages"))
->>>>>>> master
     }
 
     render() {

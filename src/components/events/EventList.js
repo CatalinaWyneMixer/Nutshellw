@@ -22,15 +22,13 @@ class EventList extends Component{
                     <div key={event.id} className="card">
                         <div className="card-body">
                             <h5 className="card-title">
-                                {event.name}
-                                {event.details}
+                                {event.eventName}
                                     <Link className="nav-link" to={`/events/${event.id}`}>Details</Link>
-                                <a
+                                    </h5>
+                                <button
                                     onClick={() => this.props.deleteEvent(event.id)}
-                                    className="card-link">Rid</a>
-                            </h5>
+                                    className="nav-link-quit">Quit Event</button>
                             <h4 className="card-tile">{event.date}
-                                {event.url}
                                 </h4>
                         </div>
                     </div>
