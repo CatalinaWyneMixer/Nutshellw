@@ -29,7 +29,7 @@ class MessageList extends Component{
                                         <div className="messageCard-body">
                                             <p className="messageCard-title">
                                                 <section className="formCard">
-                                                    <h5> From: {credentials.email}</h5>
+                                                    <h5> From: {messages.userName}</h5>
                                                     <h6> to: {messages.to}</h6>
                                                     <h6>{messages.message}</h6>
                                                     <h6>{Date()}</h6>
@@ -37,6 +37,12 @@ class MessageList extends Component{
                                                         onClick={() => this.props.deleteMessage(messages.id)
                                                         .then(() => this.props.history.push("/messages"))}
                                                          className="nav-link-delete">Delete</button>
+                                                    <button 
+                                                        onClick={() => this.props.editMessage(messages.id)
+                                                        .then(() => this.props.history.push("./messages"))}
+                                                        className="nav-link-edit">Edit</button>
+
+                                                        
                                                 </section>
                                             </p>
 
