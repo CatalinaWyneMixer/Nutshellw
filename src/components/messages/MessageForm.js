@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 
 export default class MessageForm extends Component {
+
+
     //set initial state here
+
 
     state = {
         messageId: "",
@@ -18,11 +21,13 @@ export default class MessageForm extends Component {
 
     constructNewMessage = evt => {
         evt.preventDefault()
+        const credentials = JSON.parse(localStorage.getItem('credentials'))
         const messages = {
             id: this.state.messageId,
             to: this.state.messageTo,
             message: this.state.message,
-            date: this.state.messageDate
+            date: this.state.messageDate,
+            userName: credentials.email
         }
 
         this.props.addMessage(messages)
