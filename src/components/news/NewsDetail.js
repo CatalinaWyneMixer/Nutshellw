@@ -12,15 +12,13 @@ export default class NewsDetail extends Component {
                 <div className="news">
                     <div key={news.id} className="newsCard">
                         <div className="newsCard-body">
-                            <h4 className="newsCard-title">
-                                {news.URL}
-
-                                <h6 className="newsCard-title">{news.Content}</h6>
-                                <h6>
+                            <div className="newsCard-title">
+                                <h4>{news.Content}</h4>
+                                <a href="">{news.URL}</a>
                                 <button onClick={() => this.props.deleteNews(news.id)
                                     .then(() => this.props.history.push("/news"))}
-                                    className="newsCard-link">Delete</button></h6>
-                            </h4>
+                                    className="newsCard-link">Delete</button>
+                            </div>
                         </div>
                     </div>
                 </div>
