@@ -21,6 +21,7 @@
     margin: 12px 0 0 0;
     background-color: red;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-self: center
 }
 .newsButton {
     display: flex;
@@ -36,4 +37,8 @@
 
 .cardnav-link {
     color: white
+}
+
+.deleteButton {
+    text-align: center
 }
