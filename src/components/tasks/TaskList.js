@@ -19,7 +19,7 @@ class TaskList extends Component {
         handleCheckboxChange(id);
     }
     render() {
-        const { id } = this.state;
+        const { id } = this.props;
         const { isChecked } = this.state;
         return (<React.Fragment>
             <form className="taskListForm">
