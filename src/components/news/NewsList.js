@@ -64,15 +64,17 @@ export default class NewsList extends Component {
                             <section className="news">
                                 {
                                     this.props.news.map(news =>
-                                        <div id={`animal--${news.id}`} key={news.id} className="newsCard">
+                                        <div id={`news--${news.id}`} key={news.id} className="newsCard">
                                             <div className="newsCard-body">
-                                                <h2 className="newsCard-title">
-                                                    <section>{news.title}</section>
-                                                    <h5>{news.date}</h5>
+                                                <section className="newsCard-title">
+                                                    <h4>{news.title}</h4>
+                                                    {news.date}
                                                     <Link className="cardnav-link" to={`/news/${news.id}`}>Details</Link>
-                                                        <h6><button onClick={() => this.props.deleteNews(news.id)}
-                                                            className="newsCard-link">Delete</button></h6>
-                                                </h2>
+                                                </section>
+                                                <div className="deleteButton">
+                                                    <button onClick={() => this.props.deleteNews(news.id)}
+                                                        className="newsCard-link">Delete</button>
+                                                </div>
                                             </div>
                                         </div>
                                     )
