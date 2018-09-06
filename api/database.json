@@ -24,88 +24,25 @@
   ],
   "messages": [
     {
-      "id": 3,
-      "to": "Test",
-      "message": "Test",
-      "date": ""
-    },
-    {
-      "id": 4,
-      "to": "test",
-      "message": "test",
-      "date": ""
-    },
-    {
-      "id": 5,
-      "to": "John ",
-      "message": "Test 10",
-      "date": ""
-    },
-    {
-      "id": 6,
-      "to": "John",
-      "message": "This is it",
-      "date": ""
-    },
-    {
-      "id": 7,
-      "to": "John is woody",
+      "id": 18,
+      "to": "Hey John",
       "message": "Guess what",
-      "date": ""
+      "date": "",
+      "userName": "johnnathanwood@gmail.com"
     },
     {
-      "id": 8,
-      "to": "John Wood ",
-      "message": "Hey man you are the coolest",
-      "date": ""
+      "id": 19,
+      "to": "James",
+      "message": "Guess what",
+      "date": "",
+      "userName": "navybound711@gmail.com"
     },
     {
-      "id": 9,
-      "to": "Delete",
-      "message": "Delete",
-      "date": ""
-    },
-    {
-      "id": 10,
-      "to": "John Wood",
-      "message": "SLKDFJSLD:KFJSLDKFJS:DLKFJS:DLKFJ",
-      "date": ""
-    },
-    {
-      "id": 11,
-      "to": "Brandon",
-      "message": "Hey does this work?",
-      "date": ""
-    },
-    {
-      "id": 12,
-      "to": "Brenda ",
-      "message": "Check this shit out!",
-      "date": ""
-    },
-    {
-      "id": 13,
-      "to": "Damnit",
-      "message": "Why isnt this working",
-      "date": ""
-    },
-    {
-      "id": 14,
-      "to": "Test",
-      "message": "Does it?",
-      "date": ""
-    },
-    {
-      "id": 15,
-      "to": "",
-      "message": "",
-      "date": ""
-    },
-    {
-      "id": 16,
-      "to": "fffff",
-      "message": "",
-      "date": ""
+      "id": 20,
+      "to": "Dan",
+      "message": "Hey sexy",
+      "date": "",
+      "userName": "Brenda.long@nss.ask.com"
     }
   ],
   "tasks": [
@@ -141,35 +78,8 @@
       "date": "2018-09-05",
       "details": "asdf",
       "id": 3
-    },
-    {
-      "eventName": "party party poo",
-      "url": "fnl.cun",
-      "date": "2018-10-25",
-      "details": "kdkdk",
-      "id": 4
-    },
-    {
-      "eventName": "hi",
-      "url": "e.cl",
-      "date": "2018-01-01",
-      "details": "jan",
-      "id": 6
-    },
-    {
-      "eventName": "926 event",
-      "url": "jf.com",
-      "date": "2018-09-26",
-      "details": "party in the middle",
-      "id": 7
-    },
-    {
-      "eventName": "may event pool party",
-      "url": "pool.com",
-      "date": "2018-05-21",
-      "details": "bring goggles",
-      "id": 8
     }
   ],
   "friends": []
 }
+
