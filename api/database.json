@@ -33,6 +33,7 @@
       "id": 4
     },
     {
+<<<<<<< HEAD
       "name": "project due",
       "date": "2018-09-07",
       "id": 5
@@ -41,23 +42,37 @@
       "name": "New Project",
       "date": "2018-09-24",
       "id": 6
+=======
+      "name": "jingle bells",
+      "date": "2018-09-13",
+      "id": 5
+>>>>>>> master
     }
   ],
   "jokes": [],
   "events": [
     {
-      "eventName": "asdf",
-      "url": "asdf",
-      "date": "2018-09-05",
+      "eventName": "fffeeee",
+      "url": "n.",
+      "date": "2018-09-13",
       "details": "asdf",
-      "id": 1
+      "id": 1,
+      "eventId": 1
     },
     {
-      "eventName": "test",
-      "url": "test.com",
-      "date": "0009-01-31",
-      "details": "test",
-      "id": 2
+      "eventName": "Party",
+      "url": "asdf",
+      "date": "2018-09-25",
+      "details": "bring a towle",
+      "id": 2,
+      "eventId": 1
+    },
+    {
+      "eventName": "pool part",
+      "url": "urh.com",
+      "date": "2018-09-25",
+      "details": "bring a towel",
+      "id": 3
     }
   ],
   "friends": []
