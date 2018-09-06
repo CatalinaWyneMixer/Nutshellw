@@ -39,6 +39,10 @@ export default class EventForm extends Component {
             this.props.addEvent(event).then(() => this.props.history.push("/events"))
         }
     }
+//this takes you back after you click to EVENTS PAGE
+handleButtonClick = () => {
+    document.location.href = 'http://localhost:3000/events'
+}
 
     render() {
         return (
