@@ -20,7 +20,7 @@ class JokeList extends Component{
                     <div key={joke.id} className="card">
                         <div className="card-body">
                             <h5 className="card-title">
-                                {joke.setup}
+                                {joke.setup}<br/>
                                 {joke.punchline}
                                     <Link className="nav-link" to={`/jokes/${joke.id}`}>Details</Link>
                                 <a 
