@@ -14,6 +14,13 @@
       "message": "Guess what",
       "date": "",
       "userName": "navybound711@gmail.com"
+    },
+    {
+      "id": 20,
+      "to": "Dan",
+      "message": "Hey sexy",
+      "date": "",
+      "userName": "Brenda.long@nss.ask.com"
     }
   ],
   "tasks": [
@@ -39,17 +46,10 @@
       "eventId": 1
     },
     {
-<<<<<<< HEAD
-      "eventName": "Party",
-      "url": ".ASS",
-      "date": "2018-09-25",
-      "details": "bring a towel",
-=======
       "eventName": "john",
       "url": "test.com",
       "date": "2018-09-08",
       "details": "lets go drinking ",
->>>>>>> master
       "id": 2,
       "eventId": 1
     },
@@ -59,34 +59,6 @@
       "date": "2018-09-25",
       "details": "bring a towel",
       "id": 3
-    },
-    {
-      "eventName": "party party poo",
-      "url": "fnl.cun",
-      "date": "2018-10-25",
-      "details": "kdkdk",
-      "id": 4
-    },
-    {
-      "eventName": "hi",
-      "url": "e.cl",
-      "date": "2018-01-01",
-      "details": "jan",
-      "id": 6
-    },
-    {
-      "eventName": "926 event",
-      "url": "jf.com",
-      "date": "2018-09-26",
-      "details": "party in the middle",
-      "id": 7
-    },
-    {
-      "eventName": "may event pool party",
-      "url": "pool.com",
-      "date": "2018-05-21",
-      "details": "bring goggles",
-      "id": 8
     }
   ],
   "friends": []

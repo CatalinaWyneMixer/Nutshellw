@@ -37,6 +37,12 @@ class MessageList extends Component{
                                                         onClick={() => this.props.deleteMessage(messages.id)
                                                         .then(() => this.props.history.push("/messages"))}
                                                          className="nav-link-delete">Delete</button>
+                                                    <button 
+                                                        onClick={() => this.props.editMessage(messages.id)
+                                                        .then(() => this.props.history.push("./messages"))}
+                                                        className="nav-link-edit">Edit</button>
+
+                                                        
                                                 </section>
                                             </p>
 
