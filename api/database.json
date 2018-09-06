@@ -2,88 +2,18 @@
   "news": [],
   "messages": [
     {
-      "id": 3,
-      "to": "Test",
-      "message": "Test",
-      "date": ""
-    },
-    {
-      "id": 4,
-      "to": "test",
-      "message": "test",
-      "date": ""
-    },
-    {
-      "id": 5,
-      "to": "John ",
-      "message": "Test 10",
-      "date": ""
-    },
-    {
-      "id": 6,
-      "to": "John",
-      "message": "This is it",
-      "date": ""
-    },
-    {
-      "id": 7,
-      "to": "John is woody",
+      "id": 18,
+      "to": "Hey John",
       "message": "Guess what",
-      "date": ""
+      "date": "",
+      "userName": "johnnathanwood@gmail.com"
     },
     {
-      "id": 8,
-      "to": "John Wood ",
-      "message": "Hey man you are the coolest",
-      "date": ""
-    },
-    {
-      "id": 9,
-      "to": "Delete",
-      "message": "Delete",
-      "date": ""
-    },
-    {
-      "id": 10,
-      "to": "John Wood",
-      "message": "SLKDFJSLD:KFJSLDKFJS:DLKFJS:DLKFJ",
-      "date": ""
-    },
-    {
-      "id": 11,
-      "to": "Brandon",
-      "message": "Hey does this work?",
-      "date": ""
-    },
-    {
-      "id": 12,
-      "to": "Brenda ",
-      "message": "Check this shit out!",
-      "date": ""
-    },
-    {
-      "id": 13,
-      "to": "Damnit",
-      "message": "Why isnt this working",
-      "date": ""
-    },
-    {
-      "id": 14,
-      "to": "Test",
-      "message": "Does it?",
-      "date": ""
-    },
-    {
-      "id": 15,
-      "to": "",
-      "message": "",
-      "date": ""
-    },
-    {
-      "id": 16,
-      "to": "fffff",
-      "message": "",
-      "date": ""
+      "id": 19,
+      "to": "James",
+      "message": "Guess what",
+      "date": "",
+      "userName": "navybound711@gmail.com"
     }
   ],
   "tasks": [

@@ -29,7 +29,7 @@ class MessageList extends Component{
                                         <div className="messageCard-body">
                                             <p className="messageCard-title">
                                                 <section className="formCard">
-                                                    <h5> From: {credentials.email}</h5>
+                                                    <h5> From: {messages.userName}</h5>
                                                     <h6> to: {messages.to}</h6>
                                                     <h6>{messages.message}</h6>
                                                     <h6>{Date()}</h6>
