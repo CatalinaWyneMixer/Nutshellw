@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 export default class MessageForm extends Component {
+    //set initial state here
 
     state = {
         messageId: "",
@@ -55,11 +56,11 @@ export default class MessageForm extends Component {
                             <p></p>
                             <label htmlFor="message">Message:</label>
                             <p></p>
-                            <textarea 
-                            className="form-control"
-                            onChange={this.handleFieldChange}
-                            id="message" 
-                            placeholder="..." rows="5" cols="70"></textarea>
+                            <textarea
+                                className="form-control"
+                                onChange={this.handleFieldChange}
+                                id="message"
+                                placeholder="..." rows="5" cols="70"></textarea>
                         </section>
                     </div>
                     <p></p>
