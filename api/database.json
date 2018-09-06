@@ -1,5 +1,13 @@
 {
-  "news": [],
+  "news": [
+    {
+      "title": "Happy Little Accidents",
+      "date": "2018-09-05",
+      "URL": "www.bobross.com",
+      "Content": "asdf",
+      "id": 1
+    }
+  ],
   "messages": [
     {
       "id": 1,
@@ -28,11 +36,6 @@
   ],
   "tasks": [
     {
-      "name": "project due",
-      "date": "2018-09-07",
-      "id": 2
-    },
-    {
       "name": "meeting",
       "date": "2018-09-14",
       "id": 3
@@ -41,6 +44,11 @@
       "name": "capstone",
       "date": "2018-09-28",
       "id": 4
+    },
+    {
+      "name": "asdf",
+      "date": "2018-09-05",
+      "id": 5
     }
   ],
   "jokes": [],
@@ -56,6 +64,13 @@
       "date": "0009-01-31",
       "details": "test",
       "id": 2
+    },
+    {
+      "eventName": "asdf",
+      "url": "asdf",
+      "date": "2018-09-05",
+      "details": "asdf",
+      "id": 3
     }
   ],
   "friends": []
