@@ -23,7 +23,7 @@ export default class JokeForm extends Component {
      //setting default input conditions - throwing alert
     constructNewJoke = evt => {
         evt.preventDefault()
-        if (this.state.setup === "" ||this.state.punchline === "") {
+        if (this.state.setup === "" || this.state.punchline === "") {
             window.alert("Jokes need both a setup AND a punchline!")
         } else {
             const joke = {
@@ -44,14 +44,14 @@ export default class JokeForm extends Component {
                         <label htmlFor="jokeName">joke setup</label>
                         <input type="text" required="true"
                             onChange={this.handleFieldChange}
-                            id="jokeName"
+                            id="setup"
                             placeholder="joke setup" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="details">punchline</label>
                         <input type="text" required="true"
                             onChange={this.handleFieldChange}
-                            id="details"
+                            id="punchline"
                             placeholder="what's the punchline?" />
                     </div>
                     <button type="submit" onClick={this.constructNewJoke}
