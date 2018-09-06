@@ -1,4 +1,11 @@
 {
+  "users": [
+    {
+      "email": "aartkeen@ut.utm.edu",
+      "password": "asdfasdf",
+      "id": 2
+    }
+  ],
   "news": [
     {
       "title": "Happy Little Accidents",
@@ -6,6 +13,13 @@
       "URL": "www.bobross.com",
       "Content": "asdf",
       "id": 1
+    },
+    {
+      "title": "asdf",
+      "date": "2018-09-06",
+      "URL": "asdf",
+      "Content": "asdf",
+      "id": 2
     }
   ],
   "messages": [

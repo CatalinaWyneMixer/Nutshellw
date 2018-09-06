@@ -27,6 +27,7 @@ export default class ApplicationViews extends Component {
   isAuthenticated = () => localStorage.getItem("credentials") !== null
 
   state = {
+    users: [],
     news: [],
     messages: [],
     tasks: [],
@@ -35,6 +36,24 @@ export default class ApplicationViews extends Component {
     friends: [],
     isLoaded: false
   }
+
+  addUser = users => DataManager.add("users", users)
+    .then(() => DataManager.getAll("users"))
+    .then(users => this.setState({
+      users: users
+    }))
+
+  deleteUser = id => DataManager.delete("user", id)
+    .then(() => DataManager.getAll("user"))
+    .then(user => this.setState({
+      user: user
+    }))
+
+  editUser = (id, user) => DataManager.edit("user", id, user)
+    .then(() => DataManager.getAll("user"))
+    .then(user => this.setState({
+      user: user
+    }))
 
   addNews = news => DataManager.add("news", news)
     .then(() => DataManager.getAll("news"))
@@ -148,37 +167,43 @@ export default class ApplicationViews extends Component {
 
     const newState = {}
 
-    DataManager.getAll("news")
-      .then(allNews => {
-        newState.news = allNews
+    DataManager.getAll("users")
+      .then(allUsers => {
+        newState.users = allUsers
       })
       .then(() => {
-        DataManager.getAll("messages")
-          .then(allMessages => {
-            newState.messages = allMessages
+        DataManager.getAll("news")
+          .then(allNews => {
+            newState.news = allNews
           })
           .then(() => {
-            DataManager.getAll("tasks")
-              .then(allTasks => {
-                newState.tasks = allTasks
+            DataManager.getAll("messages")
+              .then(allMessages => {
+                newState.messages = allMessages
               })
               .then(() => {
-                DataManager.getAll("jokes")
-                  .then(allJokes => {
-                    newState.jokes = allJokes
+                DataManager.getAll("tasks")
+                  .then(allTasks => {
+                    newState.tasks = allTasks
                   })
                   .then(() => {
-                    DataManager.getAllAscend("events")
-                      .then(allEvents => {
-                        newState.events = allEvents
+                    DataManager.getAll("jokes")
+                      .then(allJokes => {
+                        newState.jokes = allJokes
                       })
                       .then(() => {
-                        DataManager.getAll("friends")
-                          .then(allFriends => {
-                            newState.friends = allFriends
+                        DataManager.getAllAscend("events")
+                          .then(allEvents => {
+                            newState.events = allEvents
                           })
                           .then(() => {
-                            this.setState(newState)
+                            DataManager.getAll("friends")
+                              .then(allFriends => {
+                                newState.friends = allFriends
+                              })
+                              .then(() => {
+                                this.setState(newState)
+                              })
                           })
                       })
                   })
@@ -190,9 +215,13 @@ export default class ApplicationViews extends Component {
   render() {
     return (
       <React.Fragment>
-        <Route exact path="/" component={HomePage}/>
-        <Route exact path="/login" component={ Login } />
-        <Route exact path="/register" component={ Register } />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" render={(props) => {
+          return <Register {...props}
+            addUser={this.addUser}
+            users={this.state.users} />
+        }} />
         <Route exact path="/news" render={(props) => {
           if (this.isAuthenticated()) {
             return <NewsList {...props}
@@ -219,13 +248,13 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/" />
           }
         }} />
-        
+
 
         <Route exact path="/messages" render={(props) => {
           if (this.isAuthenticated()) {
             return <MessageList {...props}
-            deleteMessage ={this.deleteMessage}
-            messages={this.state.messages} />
+              deleteMessage={this.deleteMessage}
+              messages={this.state.messages} />
           } else {
             return <Redirect to="/" />
           }
@@ -248,7 +277,7 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/" />
           }
         }} />
-       <Route exact path="/tasks/new" render={(props) => {
+        <Route exact path="/tasks/new" render={(props) => {
           if (this.isAuthenticated()) {
             return <TaskForm {...props}
               addTask={this.addTask} />
