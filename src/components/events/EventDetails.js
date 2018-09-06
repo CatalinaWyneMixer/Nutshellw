@@ -22,10 +22,10 @@ export default class EventDetail extends Component {
                         </h4>
                         <h6 className="card-title">{event.name}</h6>
                         <h6 className="card-title"></h6>
-                        <h7>{event.details},
+                        <h6>{event.details},
                         {event.date},
                         {event.url}
-                        </h7>
+                        </h6>
                         <h5>
                         <a href="#"
                             onClick={() => this.props.deleteEvent(event.id)
