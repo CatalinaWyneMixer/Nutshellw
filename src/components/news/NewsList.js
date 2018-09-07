@@ -19,11 +19,11 @@ export default class NewsList extends Component {
                         Create New Article
                                 </button>
                 </div>
-                <hr />
                 <section>
                     {
                         <div>
                             <h1 className="header">Breaking News:</h1>
+                            <hr />
                             <section className="news">
                                 {
                                     this.props.news.map(news =>
