@@ -33,13 +33,12 @@ export default class EventDetail extends Component {
                             className="btn btn-success">Delete</a>
 
                             <a
-                            type="submit"
-                            className="btn btn-success"
+
                             onClick={() => this.props.history.push(`/events/edit/${event.id}`)}
-                            className="card-link">Edit</a></h5>
+                            className="btn btn-warning">Edit</a></h5>
 
 
-                        <Link className="nav-link"
+                        <Link className="btn btn-primary"
                             to="/events">Back To Events</Link>
 
 

@@ -2,6 +2,11 @@ import React, { Component } from "react"
 import "../login/Login.css"
 
 export default class EventForm extends Component {
+// trying to find a way to use this in the alerts for invalid fields.  See Message List
+    findUserName = messages => {
+        return this.props.users.find(user => user.id === messages.userId).username
+    }
+
     // Set initial state
     state = {
         eventName: "",
@@ -26,10 +31,10 @@ export default class EventForm extends Component {
     constructNewEvent = evt => {
         evt.preventDefault()
         if (this.state.url === "" ||this.state.date === "" || this.state.eventName === "" || this.state.details === "" ) {
-            window.alert("Please input all fields, Karen!")
+            window.alert("Please input all fields, Karen!" )
         }
         if (!this.state.url.includes('.')) {
-            window.alert("Thats not a valid email address, Doug!")
+            window.alert("Thats not a valid email address, Karen!")
         }
         else {
             const event = {

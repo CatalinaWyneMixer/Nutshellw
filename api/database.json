@@ -1,11 +1,32 @@
 {
-  "users": [],
+  "users": [
+    {
+      "username": "mateus",
+      "email": "mateusvanhalen@gmail.com",
+      "password": "hi",
+      "id": 1
+    }
+  ],
   "news": [],
   "messages": [],
   "tasks": [],
   "jokes": [],
-  "events": [],
+  "events": [
+    {
+      "eventName": "eating",
+      "url": "food.com",
+      "date": "2018-09-14",
+      "details": "chocolate",
+      "id": 1,
+      "eventId": 1
+    },
+    {
+      "eventName": "",
+      "url": "asdf.com",
+      "date": "2018-09-13",
+      "details": "asdf",
+      "id": 2
+    }
+  ],
   "friends": []
-
-
 }
