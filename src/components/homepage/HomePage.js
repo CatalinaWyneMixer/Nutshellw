@@ -25,7 +25,7 @@ export default class HomePage extends Component {
                             }>Create Account</button>
                     </div>
                 </div>
-                </React.Fragment>
+            </React.Fragment>
         )
 
     }
