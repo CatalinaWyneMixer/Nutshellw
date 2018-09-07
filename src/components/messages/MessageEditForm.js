@@ -37,6 +37,7 @@ constructNewMessage = evt => {
     })
 }
 
+
 // in this form be sure to add existing STATE INFO in PLACEHOLDER>
 render() {
     return (
@@ -51,8 +52,8 @@ render() {
                         <input type="text" required="true"
                             className="form-control"
                             onChange={this.handleFieldChange}
-                            id="messageTo"
-                            placeholder="Message To"
+                            id="to"
+                            placeholder={this.state.to}
                             size="35" />
                     </section>
                 </div>
@@ -68,7 +69,7 @@ render() {
                             className="form-control"
                             onChange={this.handleFieldChange}
                             id="message"
-                            placeholder="..." rows="5" cols="70"></textarea>
+                            placeholder={this.state.message} rows="5" cols="70"></textarea>
                     </section>
                 </div>
                 <p></p>

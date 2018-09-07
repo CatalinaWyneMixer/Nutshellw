@@ -265,7 +265,6 @@ export default class ApplicationViews extends Component {
         <Route exact path="/messages/new" render={(props) => {
           if (this.isAuthenticated()) {
             return <MessageForm {...props}
-            editMessage ={this.editMessage}
               messages={this.state.messages}
               addMessage={this.addMessage} />
           } else {
