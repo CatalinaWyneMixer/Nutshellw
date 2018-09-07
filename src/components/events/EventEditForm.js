@@ -17,7 +17,7 @@ handleFieldChange = evt => {
 
 componentDidMount() {
     // console.log(this.state)
-    const event = this.props.events.find(a => a.id === parseInt(this.props.match.params.eventId))
+    const event = this.props.events.find(a => a.id === parseInt(this.props.match.params.eventId, 0))
     this.setState(event);
 }
 constructNewEvent = (evt) => {

@@ -30,7 +30,7 @@ export default class NewsList extends Component {
     //                     <div className="card">
     //                         <div className="card-body">
     //                             <h5 className="card-name">
-    //                                 {articles.name}
+    //                                 
     //                             </h5>
     //                             <section className="card-title">
     //                                 {articles.title}
