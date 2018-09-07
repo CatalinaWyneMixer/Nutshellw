@@ -4,43 +4,37 @@ import "./task.css"
 class TaskList extends Component {
     state = {
         taskName: "",
-        // id: "",
         date: "",
-        detail: "",
+        details: "",
         isChecked: false
     }
 
-    toggleCheckboxChange = () => {
-        const { toggleCheckboxChange, taskid } = this.props;
+    // toggleCheckboxChange = () => {
+    //     const { toggleCheckboxChange, taskid } = this.props;
 
-        this.setState(({ isChecked }) => (
-            {
-                isChecked: true,
-            }
-        ));
+    //     this.setState(({ isChecked }) => (
+    //         {
+    //             isChecked: true,
+    //         }
+    //     ));
 
-
-
-        // toggleCheckboxChange(this.state.id);
-    }
-
-    // hideTask= ( => {
-    //     if (isChecked) {
-    //      document.getElementById("myForm").style.display = "none"   
-    //     }
-
-    // })
+    
+    // toggleCheckboxChange(this.state.id);
+    // }
     render() {
+
+        
+        const complete = { isChecked: true }
         const { id } = this.props;
-        const { isChecked } = this.state;
+        // const { isChecked } = this.state;
         return (<React.Fragment>
             <form className="taskListForm">
                 <div className="taskButton">
                     <button type="button"
                         className="btn btn-success"
-                        onClick={() => {
+                        onClick={() => 
                             this.props.history.push("/tasks/new")
-                        }
+                        
                         }>
                         Click to add your task
                 </button>
@@ -66,23 +60,15 @@ class TaskList extends Component {
                                             <button
                                                 onClick={() => this.props.deleteTask(task.id)}
                                                 className="card-link">Delete Task</button>
-                                            {/* <button
-                                                onClick={() => this.props.editTask(task.id)}
-                                                className="card-link">Edit Task</button> */}
+
                                         </h6>
                                     </div>
                                     <label>
-                                        <input
-                                            type="checkbox"
-                                            id={`task--${task.id}`}
-                                            value={id}
-                                            checked={isChecked}
-                                            onChange={this.state.toggleCheckboxChange}
-                                            // onClick={() => this.props.deleteTask(task.id)}
-                                            onClick="hideTask()"
-
-                                        />
-                                        {id}
+                                        <button
+                                            onClick={() => this.props.editTask(task.id, complete)}>Complete
+                                         </button>  
+                                          
+                                        {/* {id} */}
                                     </label>
                                 </div>
                             )

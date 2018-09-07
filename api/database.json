@@ -11,6 +11,12 @@
       "email": "",
       "password": "",
       "id": 2
+    },
+    {
+      "username": "Daniel Brewer",
+      "email": "danielbrewer2014@comcast.net",
+      "password": "123",
+      "id": 3
     }
   ],
   "news": [
@@ -31,43 +37,41 @@
   ],
   "messages": [
     {
-      "id": 18,
-      "to": "Hey John",
-      "message": "Guess what",
+      "id": 1,
+      "to": "John",
+      "message": "What's up",
       "date": "",
-      "userName": "johnnathanwood@gmail.com"
-    },
-    {
-      "id": 20,
-      "to": "Dan",
-      "message": "Hey sexy",
-      "date": "",
-      "userId": 2
+      "userId": 3
     }
   ],
   "tasks": [
     {
-      "taskName": "capstone",
-      "date": "2018-09-28",
-      "details": "ccc",
+      "taskName": "meeting",
+      "date": "2018-09-11",
+      "details": "Be prepared to go over the budget",
       "isChecked": false,
-      "id": 11,
-      "taskId": 11
+      "id": 1
+    },
+    {
+      "taskName": "second meeting",
+      "date": "2018-09-20",
+      "details": "Finalize the budget",
+      "isChecked": false,
+      "id": 2
     },
     {
       "taskName": "project due",
-      "date": "2018-09-12",
-      "details": "kkklllllllmm",
+      "date": "2018-09-28",
+      "details": "Project due at 3:00 pm",
       "isChecked": false,
-      "id": 12,
-      "taskId": 12
+      "id": 3
     },
     {
       "taskName": "New Project",
-      "date": "2018-09-14",
-      "details": "ccc",
+      "date": "2018-09-30",
+      "details": "Begin mapping out work flow",
       "isChecked": false,
-      "id": 13
+      "id": 4
     }
   ],
   "jokes": [],
