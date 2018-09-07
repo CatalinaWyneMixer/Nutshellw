@@ -4,6 +4,24 @@ import { Link } from "react-router-dom"
 import './Event.css'
 
 class EventList extends Component{
+//see here to format dates to something that doesnt look like cat poop
+
+    formatDate = eventDate => {
+        let date = new Date (eventDate)
+        var monthNames = [
+          "January", "February", "March",
+          "April", "May", "June", "July",
+          "August", "September", "October",
+          "November", "December"
+        ];
+
+        var day = date.getDate();
+        var monthIndex = date.getMonth();
+        var year = date.getFullYear();
+
+        // return day + ' ' + monthNames[monthIndex] + ' ' + year;
+        return monthIndex + '/' +day+ '/'+year;
+      }
 
     render() {
         return (<React.Fragment>
@@ -25,7 +43,9 @@ class EventList extends Component{
                     <div key={event.id} className="card">
                         <div className="card-body">
                             <h5 className="card-title">
-                                {event.date}
+                                {this.formatDate(event.date)}
+                                {/* {event.date} */}
+
                                     <Link className="nav-link" to={`/events/${event.id}`}>Details</Link>
                                     </h5>
                                 <button
