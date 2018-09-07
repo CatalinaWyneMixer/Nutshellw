@@ -14,6 +14,11 @@
       "email": "Johnisprettycool@aol.com",
       "password": "Hello",
       "id": 4
+    },
+    {
+      "email": "Johnisprettycool@aol.com",
+      "password": "hello",
+      "id": 5
     }
   ],
   "news": [
