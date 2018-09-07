@@ -6,9 +6,9 @@ class MessageList extends Component{
     }
 
     render() {
-        console.log(this.props.users.find(user => user.userName === "MessageTest"))
-        console.log(this.props.users)
-        console.log(this.props)
+        // console.log(this.props.users.find(user => user.userName === "MessageTest"))
+        // console.log(this.props.users)
+        // console.log(this.props)
         const credentials = JSON.parse(localStorage.getItem('credentials'))
 
        
