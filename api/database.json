@@ -1,5 +1,18 @@
 {
-  "users": [],
+  "users": [
+    {
+      "username": "MessageTest",
+      "email": "1@aol.com",
+      "password": "1",
+      "id": 1
+    },
+    {
+      "username": "johnwood",
+      "email": "test@aol.com",
+      "password": "1",
+      "id": 2
+    }
+  ],
   "news": [
     {
       "title": "Happy Little Accidents",
@@ -18,25 +31,11 @@
   ],
   "messages": [
     {
-      "id": 18,
-      "to": "Hey John",
-      "message": "Guess what",
+      "id": 1,
+      "to": "John Wood",
+      "message": "jjj",
       "date": "",
-      "userName": "johnnathanwood@gmail.com"
-    },
-    {
-      "id": 19,
-      "to": "James",
-      "message": "Guess what",
-      "date": "",
-      "userName": "navybound711@gmail.com"
-    },
-    {
-      "id": 20,
-      "to": "Dan",
-      "message": "Hey sexy",
-      "date": "",
-      "userName": "Brenda.long@nss.ask.com"
+      "userId": 2
     }
   ],
   "tasks": [
