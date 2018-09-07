@@ -6,7 +6,6 @@ export default class TaskForm extends Component {
     // Set initial state
     state = {
         taskName: "",
-        // id: "",
         date: "",
         details: "",
         isChecked: false
@@ -30,7 +29,7 @@ export default class TaskForm extends Component {
                 taskName: this.state.taskName,
                 date: this.state.date,
                 details: this.state.details,
-                isChecked: this.state.isChecked
+                isChecked: false
             }
 
             // Create the animal and redirect user to animal list
