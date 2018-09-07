@@ -46,6 +46,11 @@ export default class ApplicationViews extends Component {
       users: users
     }))
 
+  // getAllUsers = user => DataManager.getAll("users", user)
+  //   .then(users => this.setState({
+  //     users: users
+  //   }))
+
   deleteUser = id => DataManager.delete("user", id)
     .then(() => DataManager.getAll("user"))
     .then(user => this.setState({
