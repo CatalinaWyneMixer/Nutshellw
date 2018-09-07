@@ -218,11 +218,11 @@ export default class ApplicationViews extends Component {
                   })
               })
           })
-          })
-      }
+      })
+  }
 
   render() {
-          return(
+    return (
       <React.Fragment>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={Login} />
@@ -348,39 +348,39 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/login" />
           }
         }} /> */}
-        < Route exact path = "/events" render = {(props) => {
-          if(this.isAuthenticated()) {
-      return <EventList {...props}
-        deleteEvent={this.deleteEvent}
-        events={this.state.events} />
-    } else {
-      return <Redirect to="/" />
-    }
-  }
-} />
-  < Route exact path = "/events/new" render = {(props) => {
-  if (this.isAuthenticated()) {
-    return <EventForm {...props}
-      addEvent={this.addEvent} />
-  } else {
-    return <Redirect to="/" />
-  }
-}} />
-  < Route exact path = "/events/:eventId(\d+)" render = {(props) => {
-  if (this.isAuthenticated()) {
-    return <EventDetail {...props} deleteEvent={this.deleteEvent} events={this.state.events} />
-  } else {
-    return <Redirect to="/" />
-  }
-}} />
-  < Route exact path = "/events/edit/:eventId(\d+)" render = {(props) => {
-  if (this.isAuthenticated()) {
-    return <EventEditForm  {...props} editEvent={this.editEvent} events={this.state.events} />
-  } else {
-    return <Redirect to="/" />
-  }
-}} />
-{/* <Route exact path="/friends" render={(props) => {
+        < Route exact path="/events" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <EventList {...props}
+              deleteEvent={this.deleteEvent}
+              events={this.state.events} />
+          } else {
+            return <Redirect to="/" />
+          }
+        }
+        } />
+        < Route exact path="/events/new" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <EventForm {...props}
+              addEvent={this.addEvent} />
+          } else {
+            return <Redirect to="/" />
+          }
+        }} />
+        < Route exact path="/events/:eventId(\d+)" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <EventDetail {...props} deleteEvent={this.deleteEvent} events={this.state.events} />
+          } else {
+            return <Redirect to="/" />
+          }
+        }} />
+        < Route exact path="/events/edit/:eventId(\d+)" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <EventEditForm  {...props} editEvent={this.editEvent} events={this.state.events} />
+          } else {
+            return <Redirect to="/" />
+          }
+        }} />
+        {/* <Route exact path="/friends" render={(props) => {
           if (this.isAuthenticated()) {
             return <FriendList {...props}
               deleteFriend={this.deleteFriend}
@@ -397,7 +397,7 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/" />
           }
         }} /> */}
-{/* <Route exact path="/friends/:friendId(\d+)" render={(props) => {
+        {/* <Route exact path="/friends/:friendId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <FriendDetail {...props} deleteFriend={this.deleteFriend} friends={this.state.friends} />
           } else {

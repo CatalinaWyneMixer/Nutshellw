@@ -8,7 +8,7 @@ export default class JokeDetail extends Component {
             user clicked on by looking at the `this.props.jokes`
             collection that was passed down from ApplicationViews
         */
-        const joke = this.props.jokes.find(a => a.id === parseInt(this.props.match.params.jokeId)) || {}
+        const joke = this.props.jokes.find(a => a.id === parseInt(this.props.match.params.jokeId, 0)) || {}
 
         return (
             <section className="joke">
@@ -19,12 +19,12 @@ export default class JokeDetail extends Component {
                         <br/>
                         <h6>{joke.punchline} </h6>
                        
-                        <a href="#"
+                        <a
                             onClick={() => this.props.deleteJoke(joke.id)
                                             .then(() => this.props.history.push("/jokes"))}
                             className="card-link">Delete</a>
                             <br/>
-                            <a href="#"
+                            <a
                             onClick={() => this.props.history.push(`/jokes/edit/${joke.id}`)}
                             className="card-link">Edit</a>
                     </div>
