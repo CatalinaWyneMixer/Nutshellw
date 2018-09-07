@@ -1,5 +1,22 @@
 {
   "users": [
+<<<<<<< HEAD
+=======
+    {
+      "username": "MessageTest",
+      "email": "1@aol.com",
+      "password": "1",
+      "id": 1
+    },
+    {
+      "username": "johnwood",
+      "email": "test@aol.com",
+      "password": "1",
+      "id": 2
+    }
+  ],
+  "news": [
+>>>>>>> master
     {
       "username": "mateus",
       "email": "mateusvanhalen@gmail.com",
@@ -10,6 +27,7 @@
   "news": [],
   "messages": [
     {
+<<<<<<< HEAD
       "id": 12,
       "to": "Brenda ",
       "message": "Check this shit out!",
@@ -20,6 +38,13 @@
       "to": "fffff",
       "message": "",
       "date": ""
+=======
+      "id": 1,
+      "to": "John Wood",
+      "message": "jjj",
+      "date": "",
+      "userId": 2
+>>>>>>> master
     }
   ],
   "tasks": [
