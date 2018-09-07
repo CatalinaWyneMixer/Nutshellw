@@ -23,7 +23,7 @@ componentDidMount() {
 constructNewMessage = evt => {
     evt.preventDefault()
     const credentials = JSON.parse(localStorage.getItem('credentials'))
-    const newMessage = {
+    let newMessage = {
         id: this.state.messageId,
         to: this.state.messageTo,
         message: this.state.message,

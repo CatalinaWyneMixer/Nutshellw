@@ -9,6 +9,11 @@
       "email": "Johniscool@aol.com",
       "password": "yup",
       "id": 3
+    },
+    {
+      "email": "Johnisprettycool@aol.com",
+      "password": "Hello",
+      "id": 4
     }
   ],
   "news": [
@@ -55,6 +60,13 @@
       "message": "Guess what!?",
       "date": "",
       "userName": "johnnathanwood@gmail.com"
+    },
+    {
+      "id": 22,
+      "to": "James",
+      "message": "Write",
+      "date": "",
+      "userName": "johnisprettycool@aol.com"
     }
   ],
   "tasks": [
