@@ -5,7 +5,6 @@
       "email": "grady@22.com",
       "password": "22",
       "id": 1
-    
     },
     {
       "username": "johnwood",
@@ -32,18 +31,18 @@
   ],
   "messages": [
     {
-      "id": 19,
-      "to": "James",
-      "message": "Guess what",
+      "id": 1,
+      "to": "matt",
+      "message": "wow its friday already",
       "date": "",
-      "userName": "navybound711@gmail.com"
+      "userId": 1
     },
     {
-      "id": 20,
-      "to": "Dan",
-      "message": "jjj",
+      "id": 3,
+      "to": "aaron",
+      "message": "this substitute teacher is INTENSE",
       "date": "",
-      "userId": 2
+      "userId": 1
     }
   ],
   "tasks": [
@@ -75,19 +74,11 @@
     {
       "setup": "knock knock",
       "punchline": "who's there",
-      "id": 1
-    },
-    {
-      "setup": "knock knock",
-      "punchline": "who's there",
       "id": 2
     },
     {
       "setup": "knock knock",
       "punchline": "who's there",
-    {
-      "setup": "knockknock",
-      "punchline": "yo mama2",
       "id": 3
     },
     {
