@@ -1,5 +1,5 @@
 .homeButtons {
     display: flex;
     justify-content: space-evenly;
-    /* background-image: url(http://www.mtcomputers.com/989x657FourSome.jpg); */
+    flex: auto
 }

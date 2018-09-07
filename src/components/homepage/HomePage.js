@@ -4,10 +4,16 @@ import './HomePage.css'
 export default class HomePage extends Component {
 
     render() {
-
+        let styles = {
+            backgroundImage: "url(http://www.mtcomputers.com/989x657FourSome.jpg) no-repeat center center fixed",
+            WebkitBackgroundSize: "cover",
+            MozBackgroundSize: "cover",
+            OBackgroundSize: "cover",
+            backgroundSize: "cover"
+        }
         return (
             <React.Fragment>
-                <div className="homeButtons">
+                <div className="homeButtons" style={styles}>
                     <div className="loginButton">
                         <button type="button"
                             className="btn btn-success"
@@ -25,6 +31,7 @@ export default class HomePage extends Component {
                             }>Create Account</button>
                     </div>
                 </div>
+                    
             </React.Fragment>
         )
 

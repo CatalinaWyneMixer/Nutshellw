@@ -6,7 +6,6 @@
     width: auto;
     border: 100em;
     margin: .2em;
-    background-image: linear-gradient(to right, rgb(109, 129, 247),whitesmoke);
 }
 
 .newsCard-title {
@@ -14,12 +13,11 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    color: red
+    opacity: 70%;
 }
 
 .newsCard-link {
     margin: 12px 0 0 0;
-    background-color: red;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-self: center
 }
@@ -27,7 +25,6 @@
     display: flex;
     justify-content: space-evenly;
     margin: 0 0 100px 0;
-    background-color: whitesmoke
 }
 .news {
     display: flex;
