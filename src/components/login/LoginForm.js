@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import DataManager from '../../modules/DataManager'
 import './Login.css'
 
 
@@ -25,18 +26,42 @@ export default class Login extends Component {
             For now, just store the email and password that
             the customer enters into local storage.
         */
-        localStorage.setItem(
-            "credentials",
-            JSON.stringify({
-                email: this.state.email,
-                password: this.state.password
+
+        DataManager.getAll("users").then((user) => {
+            console.log(user)
+            const users = user.find(user => {
+                return user.email === this.state.email && user.password === this.state.password //verifies account is in DB
             })
-        )
+
+            if (users) {
+                localStorage.setItem("credentials", JSON.stringify(users))
+                document.location.href = 'http://localhost:3000/news'
+            } else {
+                alert("You need to register")
+                document.location.href = 'http://localhost:3000/register'
+            }
+        })
+
     }
 
-    handleButtonClick = () => {
-        document.location.href = 'http://localhost:3000/news'
-    }
+    // handleButtonClick = () => {
+    //     document.location.href = 'http://localhost:3000/news'
+
+    //     this.props.DataManager.getAll("users").then((user) => {
+
+    //         const users = user.find(user => {
+    //             return user.email === this.props.email && user.password === this.props.password //verifies account is in DB
+    //         })
+
+    //         if (users) {
+    //             sessionStorage.setItem("credentials", JSON.stringify(user))
+    //             document.location.href = 'http://localhost:3000/news'
+    //         } else {
+    //             alert("You need to register")
+    //         }
+    //     })
+
+    // }
 
     render() {
         return (
@@ -46,21 +71,21 @@ export default class Login extends Component {
                         <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
                         <label htmlFor="inputEmail">
                             Email address
-                </label>
+                        </label>
                         <input onChange={this.handleFieldChange} type="email"
                             id="email"
                             placeholder="Email address"
                             required="" autoFocus="" />
                         <label htmlFor="inputPassword">
                             Password
-                </label>
+                        </label>
                         <input onChange={this.handleFieldChange} type="password"
                             id="password"
                             placeholder="Password"
                             required="" />
-                        <button type="submit" onClick={this.handleButtonClick} className="btn btn-primary">
+                        <button type="submit" className="btn btn-primary">
                             Sign in
-                </button>
+                        </button>
                     </form>
                 </div>
             </div>
