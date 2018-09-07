@@ -16,6 +16,7 @@ class MessageList extends Component {
 
         return (
             <React.Fragment>
+
                 <div className="messagesButton">
                     <button type="button"
                         className="btn btn-success"
@@ -34,7 +35,7 @@ class MessageList extends Component {
                             {
                                 this.props.messages.map(messages =>
                                     <div id={`message--${messages.id}`} key={messages.id} className="messageCard">
-                                        <div className="messageCard-body">
+                                        <div id="messageCard-body">
                                             <h6 className="messageCard-title">
                                                 <section className="formCard">
                                                     <h5> From: {this.findUserName(messages)}</h5>
@@ -44,24 +45,29 @@ class MessageList extends Component {
                                                     <button
                                                         onClick={() => this.props.deleteMessage(messages.id)
                                                             .then(() => this.props.history.push("/messages"))}
-                                                        className="nav-link-delete">Delete</button>
+                                                        className="nav-link-delete"><hover>Delete</hover></button>
                                                     <button
                                                         onClick={() => this.props.history.push(`/messages/edit/${messages.id}`)}
-                                                        className="card-link">Edit</button>
+                                                        className="card-link-edit"><span>Edit</span></button>
+
 
 
                                                 </section>
-                                            </h6>
 
+                                            </h6>
                                         </div>
                                     </div>
+
+
 
 
 
                                 )}
                         </section>
                     </div>
+
                 </section>
+
             </React.Fragment>
         )
     }
