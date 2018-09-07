@@ -1,30 +1,18 @@
 {
-<<<<<<< HEAD
   "users": [
     {
-      "email": "aartkeen@ut.utm.edu",
-      "password": "asdfasdf",
+      "username": "MessageTest",
+      "email": "1@aol.com",
+      "password": "1",
+      "id": 1
+    },
+    {
+      "username": "johnwood",
+      "email": "test@aol.com",
+      "password": "1",
       "id": 2
-    },
-    {
-      "email": "Johniscool@aol.com",
-      "password": "yup",
-      "id": 3
-    },
-    {
-      "email": "Johnisprettycool@aol.com",
-      "password": "Hello",
-      "id": 4
-    },
-    {
-      "email": "Johnisprettycool@aol.com",
-      "password": "hello",
-      "id": 5
     }
   ],
-=======
-  "users": [],
->>>>>>> master
   "news": [
     {
       "title": "Happy Little Accidents",
@@ -43,39 +31,11 @@
   ],
   "messages": [
     {
-      "id": 18,
-      "to": "Hey John",
-      "message": "Guess what",
+      "id": 1,
+      "to": "John Wood",
+      "message": "jjj",
       "date": "",
-      "userName": "johnnathanwood@gmail.com"
-    },
-    {
-      "id": 19,
-      "to": "James",
-      "message": "Guess what",
-      "date": "",
-      "userName": "navybound711@gmail.com"
-    },
-    {
-      "id": 20,
-      "to": "Dan",
-      "message": "Hey sexy",
-      "date": "",
-      "userName": "Brenda.long@nss.ask.com"
-    },
-    {
-      "id": 21,
-      "to": "Brandon",
-      "message": "Guess what!?",
-      "date": "",
-      "userName": "johnnathanwood@gmail.com"
-    },
-    {
-      "id": 22,
-      "to": "James",
-      "message": "Write",
-      "date": "",
-      "userName": "johnisprettycool@aol.com"
+      "userId": 2
     }
   ],
   "tasks": [
@@ -120,7 +80,7 @@
       "date": "2018-09-08",
       "details": "lets go drinking ",
       "id": 2,
-      "eventId": 2
+      "eventId": 1
     },
     {
       "eventName": "ASDas",
