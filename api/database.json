@@ -1,11 +1,5 @@
 {
-  "users": [
-    {
-      "email": "aartkeen@ut.utm.edu",
-      "password": "asdfasdf",
-      "id": 2
-    }
-  ],
+  "users": [],
   "news": [
     {
       "title": "Happy Little Accidents",
