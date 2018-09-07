@@ -38,7 +38,9 @@ constructNewEvent = (evt) => {
     })
 }
 
-// in this form be sure to add existing STATE INFO in PLACEHOLDER>
+// in this form be sure to add existing STATE INFO in PLACEHOLDER. >
+//Make sure to match ids!!
+
 render() {
     return (
         <React.Fragment>

@@ -7,117 +7,68 @@
       "id": 1
     }
   ],
-  "news": [
-    {
-      "title": "Happy Little Accidents",
-      "date": "2018-09-05",
-      "URL": "www.bobross.com",
-      "Content": "asdf",
-      "id": 1
-    },
-    {
-      "title": "asdf",
-      "date": "2018-09-06",
-      "URL": "asdf",
-      "Content": "asdf",
-      "id": 2
-    }
-  ],
+  "news": [],
   "messages": [
     {
-      "id": 18,
-      "to": "Hey John",
-      "message": "Guess what",
-      "date": "",
-      "userName": "johnnathanwood@gmail.com"
+      "id": 12,
+      "to": "Brenda ",
+      "message": "Check this shit out!",
+      "date": ""
     },
     {
-      "id": 19,
-      "to": "James",
-      "message": "Guess what",
-      "date": "",
-      "userName": "navybound711@gmail.com"
-    },
-    {
-      "id": 20,
-      "to": "Dan",
-      "message": "Hey sexy",
-      "date": "",
-      "userName": "Brenda.long@nss.ask.com"
+      "id": 16,
+      "to": "fffff",
+      "message": "",
+      "date": ""
     }
   ],
   "tasks": [
     {
-      "taskName": "capstone",
-      "date": "2018-09-28",
-      "details": "ccc",
+      "taskName": "go walk dog",
+      "date": "2018-09-20",
+      "details": "grab a leash",
       "isChecked": false,
-      "id": 11,
-      "taskId": 11
-    },
-    {
-      "taskName": "project due",
-      "date": "2018-09-12",
-      "details": "kkklllllllmm",
-      "isChecked": false,
-      "id": 12,
-      "taskId": 12
-    },
-    {
-      "taskName": "New Project",
-      "date": "2018-09-14",
-      "details": "ccc",
-      "isChecked": false,
-      "id": 13
-    }
-  ],
-  "jokes": [
-    {
-      "setup": "asdfsa",
-      "punchline": "ddd",
       "id": 1
     }
   ],
+  "jokes": [],
   "events": [
     {
-      "name": "asdf",
-      "date": "2018-09-20",
+      "eventName": "fffeeee",
+      "url": "n.",
+      "date": "2018-09-13",
+      "details": "asdf",
       "id": 1,
-      "eventName": "asdfasd",
-      "eventId": 4,
-      "details": "asd",
-      "url": "fff.com"
-    },
-    {
-      "eventName": "john",
-      "url": "test.com",
-      "date": "2018-09-08",
-      "details": "lets go drinking ",
-      "id": 2,
       "eventId": 1
     },
     {
-      "eventName": "ASDas",
-      "url": "jfjf.com",
-      "date": "2018-09-09",
-      "details": "joij",
-      "id": 3,
-      "eventId": 4
+      "eventName": "party party poo",
+      "url": "fnl.cun",
+      "date": "2018-10-25",
+      "details": "kdkdk",
+      "id": 4
     },
     {
-      "eventName": "taco bell",
-      "url": "wowow.com",
-      "date": "2017-08-09",
-      "details": "lots of tacos",
-      "id": 4,
-      "eventId": 3
+      "eventName": "hi",
+      "url": "e.cl",
+      "date": "2018-01-01",
+      "details": "jan",
+      "id": 6
     },
     {
-      "eventName": "asdfasd",
-      "url": "ff.com",
-      "date": "2018-09-12",
-      "details": "bring tood",
-      "id": 5
+      "eventName": "9 / 4 event",
+      "url": "jf.com",
+      "date": "2018-09-04",
+      "details": "party in the middle",
+      "id": 7,
+      "eventId": 6
+    },
+    {
+      "eventName": "may event pool party",
+      "url": "pool.com",
+      "date": "2018-05-21",
+      "details": "bring goggles",
+      "id": 8
     }
   ],
   "friends": []
