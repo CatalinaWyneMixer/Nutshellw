@@ -5,6 +5,13 @@
       "email": "grady@22.com",
       "password": "22",
       "id": 1
+    
+    },
+    {
+      "username": "johnwood",
+      "email": "test@aol.com",
+      "password": "1",
+      "id": 2
     }
   ],
   "news": [
@@ -34,9 +41,9 @@
     {
       "id": 20,
       "to": "Dan",
-      "message": "Hey sexy",
+      "message": "jjj",
       "date": "",
-      "userName": "Brenda.long@nss.ask.com"
+      "userId": 2
     }
   ],
   "tasks": [
@@ -78,11 +85,14 @@
     {
       "setup": "knock knock",
       "punchline": "who's there",
+    {
+      "setup": "knockknock",
+      "punchline": "yo mama2",
       "id": 3
     },
     {
       "setup": "bad joke",
-      "punchline": "rotten tomatoes",
+      "punchline": "yo mama",
       "id": 4
     }
   ],
