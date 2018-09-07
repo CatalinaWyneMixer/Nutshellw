@@ -22,11 +22,13 @@ export default class TaskDetails extends Component {
                             {task.date}
                         </h4>
                         <h6 className="card-title">{task.name}</h6>
-                        <h6 className="card-title">{task.detail}</h6>
-                        <a href="#"
+                        <br></br>
+                        <h6 className="card-title">{task.details}</h6>
+                        <br></br>
+                        <button
                             onClick={() => this.props.deleteTask(task.id)
                                             .then(() => this.props.history.push("/tasks"))}
-                            className="card-link">Delete</a>
+                            className="card-link">Delete</button>
                             <button
                             onClick={() => this.props.history.push(`/tasks/edit/${task.id}`)}
                             className="card-link">Edit</button>

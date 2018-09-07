@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom"
 import "./task.css"
 class TaskList extends Component {
     state = {
-        task: "",
-        id: "",
+        taskName: "",
+        // id: "",
+        date: "",
         detail: "",
         isChecked: false
     }
@@ -17,8 +19,8 @@ class TaskList extends Component {
             }
         ));
 
-    
-        
+
+
         // toggleCheckboxChange(this.state.id);
     }
 
@@ -26,7 +28,7 @@ class TaskList extends Component {
     //     if (isChecked) {
     //      document.getElementById("myForm").style.display = "none"   
     //     }
-        
+
     // })
     render() {
         const { id } = this.props;
@@ -50,20 +52,23 @@ class TaskList extends Component {
                                 <div key={task.id} className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">
-                                            {task.name}
+                                            {task.taskName}
                                         </h4>
+                                        <br></br>
+                                        <h5>{task.date}</h5>
+                                        <br></br>
                                         <h6>
                                             <br></br>
                                             {task.detail}
                                             <br></br>
 
-                                            {/* <Link className="nav-link" to={`/tasks/${task.id}`}>Details</Link> */}
+                                            <Link className="nav-link" to={`/tasks/${task.id}`}>Details</Link>
                                             <button
                                                 onClick={() => this.props.deleteTask(task.id)}
                                                 className="card-link">Delete Task</button>
-                                            <button
+                                            {/* <button
                                                 onClick={() => this.props.editTask(task.id)}
-                                                className="card-link">Edit Task</button>
+                                                className="card-link">Edit Task</button> */}
                                         </h6>
                                     </div>
                                     <label>
@@ -75,7 +80,7 @@ class TaskList extends Component {
                                             onChange={this.state.toggleCheckboxChange}
                                             // onClick={() => this.props.deleteTask(task.id)}
                                             onClick="hideTask()"
-                                            
+
                                         />
                                         {id}
                                     </label>
