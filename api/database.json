@@ -48,6 +48,13 @@
       "message": "test",
       "date": "2018-09-07T19:11:28.887Z",
       "userId": 4
+    },
+    {
+      "id": 2,
+      "to": "asdf",
+      "message": "fasdfd",
+      "date": "2018-09-07T19:21:42.394Z",
+      "userId": 1
     }
   ],
   "tasks": [
