@@ -1,25 +1,37 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom"
 import "./task.css"
 class TaskList extends Component {
     state = {
-        task: "",
-        id: "",
+        taskName: "",
+        // id: "",
+        date: "",
+        detail: "",
         isChecked: false
     }
 
     toggleCheckboxChange = () => {
-        const { handleCheckboxChange, label } = this.props;
+        const { toggleCheckboxChange, taskid } = this.props;
 
         this.setState(({ isChecked }) => (
             {
-                isChecked: !isChecked,
+                isChecked: true,
             }
         ));
 
-        handleCheckboxChange(label);
+
+
+        // toggleCheckboxChange(this.state.id);
     }
+
+    // hideTask= ( => {
+    //     if (isChecked) {
+    //      document.getElementById("myForm").style.display = "none"   
+    //     }
+
+    // })
     render() {
-        const { label } = this.props;
+        const { id } = this.props;
         const { isChecked } = this.state;
         return (<React.Fragment>
             <form className="taskListForm">
@@ -33,35 +45,50 @@ class TaskList extends Component {
                         Click to add your task
                 </button>
                 </div>
-            <div className="checkbox">
-                            <section className="tasks">
-            {
-                this.props.tasks.map(task =>
-                    <div key={task.id} className="card">
-                        <div className="card-body">
-                            <h5 className="card-title">
-                                {task.name}
+                <div className="checkbox">
+                    <section className="tasks">
+                        {
+                            this.props.tasks.map(task =>
+                                <div key={task.id} className="card">
+                                    <div className="card-body">
+                                        <h4 className="card-title">
+                                            {task.taskName}
+                                        </h4>
+                                        <br></br>
+                                        <h5>{task.date}</h5>
+                                        <br></br>
+                                        <h6>
+                                            <br></br>
+                                            {task.detail}
+                                            <br></br>
 
-                                    {/* <Link className="nav-link" to={`/tasks/${task.id}`}>Details</Link> */}
-                                <button
-                                    onClick={() => this.props.deleteTask(task.id)}
-                                    className="card-link">Delete Task</button>
-                                    </h5>
-                        </div>
-                        <label>
-                            <input
-                                type="checkbox"
-                                value={label}
-                                checked={isChecked}
-                                onChange={this.toggleCheckboxChange}
-                            />
-                            {label}
-                        </label>
-                    </div>
-                )
-            }
-            </section>
-                    </div>
+                                            <Link className="nav-link" to={`/tasks/${task.id}`}>Details</Link>
+                                            <button
+                                                onClick={() => this.props.deleteTask(task.id)}
+                                                className="card-link">Delete Task</button>
+                                            {/* <button
+                                                onClick={() => this.props.editTask(task.id)}
+                                                className="card-link">Edit Task</button> */}
+                                        </h6>
+                                    </div>
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            id={`task--${task.id}`}
+                                            value={id}
+                                            checked={isChecked}
+                                            onChange={this.state.toggleCheckboxChange}
+                                            // onClick={() => this.props.deleteTask(task.id)}
+                                            onClick="hideTask()"
+
+                                        />
+                                        {id}
+                                    </label>
+                                </div>
+                            )
+                        }
+                    </section>
+                </div>
             </form>
         </React.Fragment>
         )
