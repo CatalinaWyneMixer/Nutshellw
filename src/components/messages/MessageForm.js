@@ -26,7 +26,7 @@ export default class MessageForm extends Component {
             id: this.state.messageId,
             to: this.state.messageTo,
             message: this.state.message,
-            date: this.state.messageDate,
+            date: new Date().toISOString(),
             userId: credentials.id
         }
 

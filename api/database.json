@@ -11,6 +11,12 @@
       "email": "test@aol.com",
       "password": "1",
       "id": 2
+    },
+    {
+      "username": "MessageTestV2",
+      "email": "navybound711@gmail.com",
+      "password": "1",
+      "id": 3
     }
   ],
   "news": [
@@ -27,15 +33,36 @@
       "URL": "asdf",
       "Content": "asdf",
       "id": 2
+    },
+    {
+      "title": "e",
+      "date": "",
+      "URL": "www.aol.com",
+      "Content": "hey ho",
+      "id": 3
     }
   ],
   "messages": [
     {
-      "id": 1,
-      "to": "John Wood",
-      "message": "jjj",
-      "date": "",
-      "userId": 2
+      "id": 3,
+      "to": "test",
+      "message": "version 2",
+      "date": "11:34:23 GMT-0500 (Central Daylight Time)",
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "to": "",
+      "message": "version 3",
+      "date": "2018-09-07T16:36:37.540Z",
+      "userId": 3
+    },
+    {
+      "id": 5,
+      "to": "john wooooooood",
+      "message": "version 100",
+      "date": "2018-09-07T16:39:19.650Z",
+      "userId": 3
     }
   ],
   "tasks": [
@@ -50,7 +77,7 @@
     {
       "taskName": "project due",
       "date": "2018-09-12",
-      "details": "kkklllllllmm",
+      "details": "test",
       "isChecked": false,
       "id": 12,
       "taskId": 12
@@ -80,7 +107,7 @@
       "date": "2018-09-08",
       "details": "lets go drinking ",
       "id": 2,
-      "eventId": 1
+      "eventId": 4
     },
     {
       "eventName": "ASDas",
