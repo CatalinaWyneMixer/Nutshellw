@@ -1,5 +1,18 @@
 {
-  "users": [],
+  "users": [
+    {
+      "username": "MessageTest",
+      "email": "1@aol.com",
+      "password": "1",
+      "id": 1
+    },
+    {
+      "username": "johnwood",
+      "email": "test@aol.com",
+      "password": "1",
+      "id": 2
+    }
+  ],
   "news": [
     {
       "title": "Happy Little Accidents",
@@ -17,7 +30,6 @@
     }
   ],
   "messages": [
-    
     {
       "id": 19,
       "to": "James",
@@ -28,9 +40,9 @@
     {
       "id": 20,
       "to": "Dan",
-      "message": "Hey sexy",
+      "message": "jjj",
       "date": "",
-      "userName": "Brenda.long@nss.ask.com"
+      "userId": 2
     }
   ],
   "tasks": [
@@ -59,43 +71,15 @@
     }
   ],
   "jokes": [
-    {"setup": "yo mama so crosseyed",
-    "punchline": "when she cries, tears roll down her back!",
-    "id": 1}
-  ],
-  "events": [
     {
-      "name": "asdf",
-      "date": "2018-09-20",
-      "id": 1,
-      "eventName": "asdfasd",
-      "eventId": 4,
-      "details": "asd",
-      "url": "fff.com"
+      "setup": "knockknock",
+      "punchline": "yo mama2",
+      "id": 3
     },
     {
-      "eventName": "john",
-      "url": "test.com",
-      "date": "2018-09-08",
-      "details": "lets go drinking ",
-      "id": 2,
-      "eventId": 1
-    },
-    {
-      "eventName": "ASDas",
-      "url": "jfjf.com",
-      "date": "2018-09-09",
-      "details": "joij",
-      "id": 3,
-      "eventId": 4
-    },
-    {
-      "eventName": "taco bell",
-      "url": "wowow.com",
-      "date": "2017-08-09",
-      "details": "lots of tacos",
-      "id": 4,
-      "eventId": 3
+      "setup": "bad joke",
+      "punchline": "yo mama",
+      "id": 4
     }
   ],
   "events": [],

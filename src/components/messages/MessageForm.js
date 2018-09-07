@@ -27,7 +27,7 @@ export default class MessageForm extends Component {
             to: this.state.messageTo,
             message: this.state.message,
             date: this.state.messageDate,
-            userName: credentials.email
+            userId: credentials.id
         }
 
         this.props.addMessage(messages)
