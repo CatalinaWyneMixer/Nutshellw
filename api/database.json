@@ -1,9 +1,126 @@
 {
-  "users": [],
-  "news": [],
-  "messages": [],
-  "tasks": [],
-  "jokes": [],
-  "events": [],
+  "users": [
+    {
+      "username": "aartkeen",
+      "email": "aartkeen@ut.utm.edu",
+      "password": "asdfasdf",
+      "id": 1
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "username": "Daniel Brewer",
+      "email": "danielbrewer2014@comcast.net",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "username": "MessageTestV2",
+      "email": "1@aol.com",
+      "password": "1",
+      "id": 4
+    }
+  ],
+  "news": [
+    {
+      "title": "Capstones Due",
+      "date": "2018-09-07",
+      "URL": "www.ohshit.com",
+      "Content": "Capstone season is coming!",
+      "id": 2
+    },
+    {
+      "title": "Happy Little Accidents",
+      "date": "2018-09-07",
+      "URL": "www.bobross.com",
+      "Content": "It's okay to feel sad sometimes!",
+      "id": 3
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "to": "John Wood",
+      "message": "test",
+      "date": "2018-09-07T19:11:28.887Z",
+      "userId": 4
+    }
+  ],
+  "tasks": [
+    {
+      "taskName": "meeting",
+      "date": "2018-09-11",
+      "details": "Be prepared to go over the budget",
+      "isChecked": false,
+      "id": 1
+    },
+    {
+      "taskName": "second meeting",
+      "date": "2018-09-20",
+      "details": "Finalize the budget",
+      "isChecked": false,
+      "id": 2
+    },
+    {
+      "taskName": "project due",
+      "date": "2018-09-28",
+      "details": "Project due at 3:00 pm",
+      "isChecked": false,
+      "id": 3
+    },
+    {
+      "taskName": "New Project",
+      "date": "2018-09-30",
+      "details": "Begin mapping out work flow",
+      "isChecked": false,
+      "id": 4
+    }
+  ],
+  "jokes": [
+    {
+      "setup": "hey",
+      "punchline": "v2",
+      "id": 1
+    }
+  ],
+  "events": [
+    {
+      "name": "asdf",
+      "date": "2018-09-20",
+      "id": 1,
+      "eventName": "asdfasd",
+      "eventId": 4,
+      "details": "asd",
+      "url": "fff.com"
+    },
+    {
+      "eventName": "john",
+      "url": "test.com",
+      "date": "2018-09-08",
+      "details": "lets go drinking ",
+      "id": 2,
+      "eventId": 1
+    },
+    {
+      "eventName": "ASDas",
+      "url": "jfjf.com",
+      "date": "2018-09-09",
+      "details": "joij",
+      "id": 3,
+      "eventId": 4
+    },
+    {
+      "eventName": "taco bell",
+      "url": "wowow.com",
+      "date": "2017-08-09",
+      "details": "lots of tacos",
+      "id": 4,
+      "eventId": 3
+    }
+  ],
   "friends": []
 }
