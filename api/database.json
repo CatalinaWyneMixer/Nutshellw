@@ -5,22 +5,28 @@
       "email": "aartkeen@ut.utm.edu",
       "password": "asdfasdf",
       "id": 1
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 2
     }
   ],
   "news": [
-    {
-      "title": "Happy Little Accidents",
-      "date": "2018-09-05",
-      "URL": "www.bobross.com",
-      "Content": "asdf",
-      "id": 1
-    },
     {
       "title": "Capstones Due",
       "date": "2018-09-07",
       "URL": "www.ohshit.com",
       "Content": "Capstone season is coming!",
       "id": 2
+    },
+    {
+      "title": "Happy Little Accidents",
+      "date": "2018-09-07",
+      "URL": "www.bobross.com",
+      "Content": "It's okay to feel sad sometimes!",
+      "id": 3
     }
   ],
   "messages": [
