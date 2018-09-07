@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import "./Event.css"
 import events_pic from "./events_pic.jpg"
+import { Link } from "react-router-dom"
 
 
 
@@ -30,10 +31,19 @@ export default class EventDetail extends Component {
                         <a href="#"
                             onClick={() => this.props.deleteEvent(event.id)
                                             .then(() => this.props.history.push("/events"))}
-                            className="card-link">Delete</a>
+                            className="btn btn-success">Delete</a>
+
                             <a href="#"
+                            type="submit"
+                            className="btn btn-success"
                             onClick={() => this.props.history.push(`/events/edit/${event.id}`)}
                             className="card-link">Edit</a></h5>
+
+
+                        <Link className="nav-link"
+                        to="/events">Back To Events</Link>
+
+
                     </div>
                 </div>
             </section>

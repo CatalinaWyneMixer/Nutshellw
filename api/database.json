@@ -55,8 +55,12 @@
   "events": [
     {
       "name": "asdf",
-      "date": "2018-09-05",
-      "id": 1
+      "date": "2018-09-20",
+      "id": 1,
+      "eventName": "asdfasd",
+      "eventId": 4,
+      "details": "asd",
+      "url": "fff.com"
     },
     {
       "eventName": "john",
@@ -67,11 +71,20 @@
       "eventId": 1
     },
     {
-      "eventName": "asdf",
-      "url": "asdf",
-      "date": "2018-09-05",
-      "details": "asdf",
-      "id": 3
+      "eventName": "ASDas",
+      "url": "jfjf.com",
+      "date": "2018-09-09",
+      "details": "joij",
+      "id": 3,
+      "eventId": 4
+    },
+    {
+      "eventName": "taco bell",
+      "url": "wowow.com",
+      "date": "2017-08-09",
+      "details": "lots of tacos",
+      "id": 4,
+      "eventId": 3
     }
   ],
   "friends": []
