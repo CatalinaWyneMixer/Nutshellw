@@ -6,11 +6,12 @@
   "jokes": [],
   "events": [
     {
-      "eventName": "taco bell",
-      "url": "taco.com",
-      "date": "2018-09-07",
-      "details": "grady",
-      "id": 1
+      "eventName": "McDonalds",
+      "url": "mcD.com",
+      "date": "2018-09-15",
+      "details": "Tom Brady sucks",
+      "id": 1,
+      "eventId": 1
     }
   ],
   "friends": []

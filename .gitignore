@@ -2,8 +2,7 @@
 
 # dependencies
 /node_modules
-/api
-api/
+database.json
 
 # testing
 /coverage
