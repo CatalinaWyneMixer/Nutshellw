@@ -1,99 +1,16 @@
 {
-  "users": [
-<<<<<<< HEAD
-=======
-    {
-      "username": "MessageTest",
-      "email": "1@aol.com",
-      "password": "1",
-      "id": 1
-    },
-    {
-      "username": "johnwood",
-      "email": "test@aol.com",
-      "password": "1",
-      "id": 2
-    }
-  ],
-  "news": [
->>>>>>> master
-    {
-      "username": "mateus",
-      "email": "mateusvanhalen@gmail.com",
-      "password": "hi",
-      "id": 1
-    }
-  ],
+  "users": [],
   "news": [],
-  "messages": [
-    {
-<<<<<<< HEAD
-      "id": 12,
-      "to": "Brenda ",
-      "message": "Check this shit out!",
-      "date": ""
-    },
-    {
-      "id": 16,
-      "to": "fffff",
-      "message": "",
-      "date": ""
-=======
-      "id": 1,
-      "to": "John Wood",
-      "message": "jjj",
-      "date": "",
-      "userId": 2
->>>>>>> master
-    }
-  ],
-  "tasks": [
-    {
-      "taskName": "go walk dog",
-      "date": "2018-09-20",
-      "details": "grab a leash",
-      "isChecked": false,
-      "id": 1
-    }
-  ],
+  "messages": [],
+  "tasks": [],
   "jokes": [],
   "events": [
     {
-      "eventName": "fffeeee",
-      "url": "n.",
-      "date": "2018-09-13",
-      "details": "asdf",
-      "id": 1,
-      "eventId": 1
-    },
-    {
-      "eventName": "party party poo",
-      "url": "fnl.cun",
-      "date": "2018-10-25",
-      "details": "kdkdk",
-      "id": 4
-    },
-    {
-      "eventName": "hi",
-      "url": "e.cl",
-      "date": "2018-01-01",
-      "details": "jan",
-      "id": 6
-    },
-    {
-      "eventName": "9 / 4 event",
-      "url": "jf.com",
-      "date": "2018-09-04",
-      "details": "party in the middle",
-      "id": 7,
-      "eventId": 6
-    },
-    {
-      "eventName": "may event pool party",
-      "url": "pool.com",
-      "date": "2018-05-21",
-      "details": "bring goggles",
-      "id": 8
+      "eventName": "taco bell",
+      "url": "taco.com",
+      "date": "2018-09-07",
+      "details": "grady",
+      "id": 1
     }
   ],
   "friends": []
