@@ -42,6 +42,13 @@
       "message": "What's up",
       "date": "",
       "userId": 3
+    },
+    {
+      "id": 2,
+      "to": "Gary",
+      "message": "Better have my money",
+      "date": "2018-09-07T18:00:41.049Z",
+      "userId": 1
     }
   ],
   "tasks": [

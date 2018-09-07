@@ -4,10 +4,12 @@ import './HomePage.css'
 export default class HomePage extends Component {
 
     render() {
-
+        let styles = {
+            height: 'fill'
+        }
         return (
             <React.Fragment>
-                <div className="homeButtons">
+                <div className="container-fluid" style={styles}>
                     <div className="loginButton">
                         <button type="button"
                             className="btn btn-success"
@@ -24,6 +26,42 @@ export default class HomePage extends Component {
                             }
                             }>Create Account</button>
                     </div>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                 </div>
             </React.Fragment>
         )
