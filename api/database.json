@@ -94,7 +94,13 @@
       "id": 4
     }
   ],
-  "jokes": [],
+  "jokes": [
+    {
+      "setup": "hey",
+      "punchline": "hey hey hey",
+      "id": 1
+    }
+  ],
   "events": [
     {
       "name": "asdf",
