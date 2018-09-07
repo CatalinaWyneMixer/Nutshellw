@@ -34,22 +34,7 @@ constructNewTask = (evt) => {
         this.props.history.push(`/tasks/${this.props.match.params.taskId}`)
     })
 }
-constructNewTask = (evt) => {
-    evt.preventDefault()
-    console.log(this.state)
-    let newTask = {
-        taskName: this.state.taskName,
-        taskId: this.props.tasks.find(e => e.name === this.state.task).id,
-        date: this.state.date,
-        id: this.state.id,
-        details: this.state.details,
 
-    }
-    this.props.editTask(newTask.id, newTask)
-    .then(()=>{
-        this.props.history.push(`/tasks/${this.props.match.params.taskId}`)
-    })
-}
 
 // in this form be sure to add existing STATE INFO in PLACEHOLDER>
 render() {

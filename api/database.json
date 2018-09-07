@@ -17,6 +17,12 @@
       "email": "danielbrewer2014@comcast.net",
       "password": "123",
       "id": 3
+    },
+    {
+      "username": "Daniel Brewer",
+      "email": "danielbrewer2014@comcast.net",
+      "password": "123",
+      "id": 4
     }
   ],
   "news": [
@@ -47,10 +53,11 @@
   "tasks": [
     {
       "taskName": "meeting",
-      "date": "2018-09-11",
+      "date": "2018-09-10",
       "details": "Be prepared to go over the budget",
       "isChecked": false,
-      "id": 1
+      "id": 1,
+      "taskId": 1
     },
     {
       "taskName": "second meeting",
@@ -62,14 +69,14 @@
     {
       "taskName": "project due",
       "date": "2018-09-28",
-      "details": "Project due at 3:00 pm",
+      "details": "Due by 3:00 pm",
       "isChecked": false,
       "id": 3
     },
     {
       "taskName": "New Project",
-      "date": "2018-09-30",
-      "details": "Begin mapping out work flow",
+      "date": "2018-10-01",
+      "details": "Map out Work Flow",
       "isChecked": false,
       "id": 4
     }
