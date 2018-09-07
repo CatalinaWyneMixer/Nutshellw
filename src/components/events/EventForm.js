@@ -25,9 +25,13 @@ export default class EventForm extends Component {
      //setting default input conditions - throwing alert.   MIND THE BANG!
     constructNewEvent = evt => {
         evt.preventDefault()
-        if (this.state.url === "" ||this.state.date === "" || this.state.eventName === "" || this.state.details === "" || !this.state.url.includes('.')) {
-            window.alert("Please input all fields ya jerk!")
-        } else {
+        if (this.state.url === "" ||this.state.date === "" || this.state.eventName === "" || this.state.details === "" ) {
+            window.alert("Please input all fields, Karen!")
+        }
+        if (!this.state.url.includes('.')) {
+            window.alert("Thats not a valid email address, Doug!")
+        }
+        else {
             const event = {
                 eventName: this.state.eventName,
                 url: this.state.url,

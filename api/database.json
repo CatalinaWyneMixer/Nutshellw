@@ -1,10 +1,4 @@
 {
-<<<<<<< HEAD
-  "users": [],
-  "news": [],
-  "messages": [],
-  "tasks": [],
-=======
   "users": [
     {
       "username": "aartkeen",
@@ -23,6 +17,12 @@
       "email": "danielbrewer2014@comcast.net",
       "password": "123",
       "id": 3
+    },
+    {
+      "username": "mateus",
+      "email": "mateusvanhalen@gmail.com",
+      "password": "hi",
+      "id": 4
     }
   ],
   "news": [
@@ -80,7 +80,6 @@
       "id": 4
     }
   ],
->>>>>>> master
   "jokes": [],
   "events": [
     {
