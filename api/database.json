@@ -19,9 +19,9 @@
       "id": 3
     },
     {
-      "username": "Daniel Brewer",
-      "email": "danielbrewer2014@comcast.net",
-      "password": "123",
+      "username": "MessageTestV2",
+      "email": "1@aol.com",
+      "password": "1",
       "id": 4
     }
   ],
@@ -44,10 +44,10 @@
   "messages": [
     {
       "id": 1,
-      "to": "John",
-      "message": "What's up",
-      "date": "",
-      "userId": 3
+      "to": "John Wood",
+      "message": "test",
+      "date": "2018-09-07T19:11:28.887Z",
+      "userId": 4
     }
   ],
   "tasks": [
@@ -81,7 +81,13 @@
       "id": 4
     }
   ],
-  "jokes": [],
+  "jokes": [
+    {
+      "setup": "hey",
+      "punchline": "v2",
+      "id": 1
+    }
+  ],
   "events": [
     {
       "name": "asdf",

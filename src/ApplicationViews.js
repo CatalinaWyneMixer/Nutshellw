@@ -19,7 +19,7 @@ import NewsDetail from './components/news/NewsDetail'
 import JokeList from './components/jokes/JokeList'
 import JokeForm from './components/jokes/JokeForm'
 import JokeDetail from './components/jokes/JokeDetail'
-// import JokeEditForm from '.components/jokes/JokeEditForm'
+import JokeEditForm from './components/jokes/JokeEditForm'
 import EventList from './components/events/EventList'
 import EventForm from './components/events/EventForm'
 import EventDetail from './components/events/EventDetails'
@@ -342,13 +342,13 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/" />
           }
         }} />
-        {/* <Route exact path="/jokes/edit/:jokeId(\d+)" render={(props) => {
+        <Route exact path="/jokes/edit/:jokeId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
-            return <JokeEditForm  {...props} editJoke={this.editJoke} jokes={this.state.jokes} />
+            return <JokeEditForm {...props} editJoke={this.editJoke} deleteJoke={this.deleteJoke} jokes={this.state.jokes} />
           } else {
             return <Redirect to="/login" />
           }
-        }} /> */}
+        }} /> 
         < Route exact path="/events" render={(props) => {
           if (this.isAuthenticated()) {
             return <EventList {...props}
