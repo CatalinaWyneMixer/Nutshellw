@@ -57,7 +57,13 @@
       "id": 5
     }
   ],
-  "jokes": [],
+  "jokes": [
+    {
+      "setup": "asdfsa",
+      "punchline": "ddd",
+      "id": 1
+    }
+  ],
   "events": [
     {
       "name": "asdf",
@@ -91,6 +97,13 @@
       "details": "lots of tacos",
       "id": 4,
       "eventId": 3
+    },
+    {
+      "eventName": "asdfasd",
+      "url": "ff.com",
+      "date": "2018-09-12",
+      "details": "bring tood",
+      "id": 5
     }
   ],
   "friends": []
