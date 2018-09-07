@@ -25,8 +25,7 @@ class TaskList extends Component {
 
         
         const complete = { isChecked: true }
-        const { id } = this.props;
-        // const { isChecked } = this.state;
+
         return (<React.Fragment>
             <form className="taskListForm">
                 <div className="taskButton">
@@ -59,13 +58,15 @@ class TaskList extends Component {
                                             <Link className="nav-link" to={`/tasks/${task.id}`}>Details</Link>
                                             <button
                                                 onClick={() => this.props.deleteTask(task.id)}
-                                                className="card-link">Delete Task</button>
+                                                className="card-link btn btn-primary btn-sm">Delete Task</button>
 
                                         </h6>
                                     </div>
                                     <label>
                                         <button
-                                            onClick={() => this.props.editTask(task.id, complete)}>Complete
+                                            onClick={() => this.props.editTask(task.id, complete)
+                                            }
+                                            className="card-link btn btn-secondary btn-lg btn-block">Complete
                                          </button>  
                                           
                                         {/* {id} */}

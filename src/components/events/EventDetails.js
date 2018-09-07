@@ -27,20 +27,20 @@ export default class EventDetail extends Component {
                         {event.url}
                         </h6>
                         <h5>
-                        <a
-                            onClick={() => this.props.deleteEvent(event.id)
-                                            .then(() => this.props.history.push("/events"))}
-                            className="btn btn-success">Delete</a>
+                            <a
+                                onClick={() => this.props.deleteEvent(event.id)
+                                    .then(() => this.props.history.push("/events"))}
+                                className="btn btn-success">Delete</a>
 
                             <a
-                            type="submit"
-                            className="btn btn-success"
-                            onClick={() => this.props.history.push(`/events/edit/${event.id}`)}
-                            className="card-link">Edit</a></h5>
+                                type="submit"
+                                className="btn btn-success"
+                                onClick={() => this.props.history.push(`/events/edit/${event.id}`)}
+                                className="card-link">Edit</a></h5>
 
 
                         <Link className="nav-link"
-                        to="/events">Back To Events</Link>
+                            to="/events">Back To Events</Link>
 
 
                     </div>

@@ -19,7 +19,6 @@ export default class TaskForm extends Component {
         this.setState(stateToChange)
     }
 
-
     constructNewTask = evt => {
         evt.preventDefault()
         if (this.state.date === "" || this.state.taskName === "" || this.state.details === "") {
@@ -42,7 +41,7 @@ export default class TaskForm extends Component {
 render() {
     return (
         <React.Fragment>
-            <form className="taskForm">
+            <form className="taskForm border border-dark">
                 <div className="form-group">
                     <label htmlFor="taskName">Task name</label>
                     <input type="text" required="true"
