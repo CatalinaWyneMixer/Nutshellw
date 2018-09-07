@@ -35,12 +35,12 @@ class MessageList extends Component{
                                 this.props.messages.map(messages =>
                                     <div id={`message--${messages.id}`} key={messages.id} className="messageCard">
                                         <div className="messageCard-body">
-                                            <p className="messageCard-title">
+                                            <h6 className="messageCard-title">
                                                 <section className="formCard">
                                                     <h5> From: {this.findUserName(messages)}</h5>
                                                     <h6> to: {messages.to}</h6>
                                                     <h6>{messages.message}</h6>
-                                                    <h6>{Date()}</h6>
+                                                    <p>{messages.date}</p>
                                                     <button
                                                         onClick={() => this.props.deleteMessage(messages.id)
                                                         .then(() => this.props.history.push("/messages"))}
@@ -51,7 +51,7 @@ class MessageList extends Component{
 
                                                         
                                                 </section>
-                                            </p>
+                                            </h6>
 
                                         </div>
                                     </div>

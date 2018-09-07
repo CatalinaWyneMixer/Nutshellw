@@ -1,12 +1,26 @@
+
+
+// constructNewMessage = evt => {
+//     evt.preventDefault()
+//     const taco = "messages"
+//     const messagesId = evt.target.parentNode.id
+//     const credentials = JSON.parse(localStorage.getItem('credentials'))
+//     let newMessage = {
+//         message: this.state.message,
+//         date: this.state.messageDate,
+//     }
+
+
 import React, { Component } from "react"
 
 // the edit button will live on Event Detail
 
-export default class EventEditForm extends Component {
+export default class MessageEditForm extends Component {
 
     state = {
 
     }
+
 // update state upon edits to fields
 handleFieldChange = evt => {
     const stateToChange = {}
@@ -19,23 +33,21 @@ componentDidMount() {
     const message = this.props.messages.find(a => a.id === parseInt(this.props.match.params.messageId))
     this.setState(message);
 }
-
-constructNewMessage = evt => {
+constructNewMessage = (evt) => {
     evt.preventDefault()
-    const credentials = JSON.parse(localStorage.getItem('credentials'))
+    console.log(this.state)
     let newMessage = {
-        id: this.state.messageId,
-        to: this.state.messageTo,
         message: this.state.message,
-        date: this.state.messageDate,
-        userName: credentials.email
     }
-
-    this.props.editMessage(newMessage.id, newMessage)
+    console.log(newMessage, "newMessage")
+    this.props.editMessage(this.state.id, newMessage)
     .then(()=>{
-        this.props.history.push(`/messages/${this.props.match.params.messageId}`)
+        this.props.history.push("/messages")
+        
     })
 }
+
+ 
 
 
 // in this form be sure to add existing STATE INFO in PLACEHOLDER>
