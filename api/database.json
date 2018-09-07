@@ -52,21 +52,6 @@
   ],
   "tasks": [
     {
-      "taskName": "meeting",
-      "date": "2018-09-10",
-      "details": "Be prepared to go over the budget",
-      "isChecked": false,
-      "id": 1,
-      "taskId": 1
-    },
-    {
-      "taskName": "second meeting",
-      "date": "2018-09-20",
-      "details": "Finalize the budget",
-      "isChecked": false,
-      "id": 2
-    },
-    {
       "taskName": "project due",
       "date": "2018-09-28",
       "details": "Due by 3:00 pm",
