@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Message.css'
-class MessageList extends Component{
+class MessageList extends Component {
     findUserName = messages => {
         return this.props.users.find(user => user.id === messages.userId).username
     }
@@ -11,8 +11,8 @@ class MessageList extends Component{
         console.log(this.props)
         const credentials = JSON.parse(localStorage.getItem('credentials'))
 
-       
-        
+
+
 
         return (
             <React.Fragment>
@@ -43,13 +43,13 @@ class MessageList extends Component{
                                                     <p>{messages.date}</p>
                                                     <button
                                                         onClick={() => this.props.deleteMessage(messages.id)
-                                                        .then(() => this.props.history.push("/messages"))}
-                                                         className="nav-link-delete">Delete</button>
-                                                    <button 
+                                                            .then(() => this.props.history.push("/messages"))}
+                                                        className="nav-link-delete">Delete</button>
+                                                    <button
                                                         onClick={() => this.props.history.push(`/messages/edit/${messages.id}`)}
                                                         className="card-link">Edit</button>
 
-                                                        
+
                                                 </section>
                                             </h6>
 

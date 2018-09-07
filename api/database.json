@@ -13,16 +13,16 @@
       "id": 2
     },
     {
-<<<<<<< HEAD
-      "username": "MessageTestV2",
-      "email": "navybound711@gmail.com",
-      "password": "1",
-=======
       "username": "Daniel Brewer",
       "email": "danielbrewer2014@comcast.net",
       "password": "123",
->>>>>>> master
       "id": 3
+    },
+    {
+      "username": "MessageTestV2",
+      "email": "1@aol.com",
+      "password": "1",
+      "id": 4
     }
   ],
   "news": [
@@ -34,55 +34,34 @@
       "id": 2
     },
     {
-<<<<<<< HEAD
-      "title": "asdf",
-      "date": "2018-09-06",
-      "URL": "asdf",
-      "Content": "asdf",
-      "id": 2
-    },
-    {
-      "title": "e",
-      "date": "",
-      "URL": "www.aol.com",
-      "Content": "hey ho",
-=======
       "title": "Happy Little Accidents",
       "date": "2018-09-07",
       "URL": "www.bobross.com",
       "Content": "It's okay to feel sad sometimes!",
->>>>>>> master
       "id": 3
     }
   ],
   "messages": [
     {
-<<<<<<< HEAD
-      "id": 3,
-      "to": "test",
-      "message": "version 2",
-      "date": "11:34:23 GMT-0500 (Central Daylight Time)",
-      "userId": 3
-    },
-    {
-      "id": 4,
-      "to": "",
-      "message": "version 3",
-      "date": "2018-09-07T16:36:37.540Z",
-      "userId": 3
-    },
-    {
-      "id": 5,
-      "to": "john wooooooood",
-      "message": "version 100",
-      "date": "2018-09-07T16:39:19.650Z",
-=======
       "id": 1,
       "to": "John",
-      "message": "What's up",
+      "message": "v4",
       "date": "",
->>>>>>> master
       "userId": 3
+    },
+    {
+      "id": 2,
+      "to": "Jacob",
+      "message": "John Smith",
+      "date": "2018-09-07T18:13:31.986Z",
+      "userId": 3
+    },
+    {
+      "id": 3,
+      "to": "Brenda",
+      "message": "Whats up",
+      "date": "2018-09-07T18:14:21.685Z",
+      "userId": 4
     }
   ],
   "tasks": [
@@ -102,13 +81,8 @@
     },
     {
       "taskName": "project due",
-<<<<<<< HEAD
-      "date": "2018-09-12",
-      "details": "test",
-=======
       "date": "2018-09-28",
       "details": "Project due at 3:00 pm",
->>>>>>> master
       "isChecked": false,
       "id": 3
     },
@@ -137,7 +111,7 @@
       "date": "2018-09-08",
       "details": "lets go drinking ",
       "id": 2,
-      "eventId": 4
+      "eventId": 1
     },
     {
       "eventName": "ASDas",
