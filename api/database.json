@@ -1,9 +1,52 @@
 {
-  "users": [],
+  "users": [
+    {
+      "username": "aartkeen@ut.utm.edu",
+      "email": "aartkeen@ut.utm.edu",
+      "password": "asdfasdf",
+      "id": 1
+    }
+  ],
   "news": [],
   "messages": [],
-  "tasks": [],
-  "jokes": [],
-  "events": [],
+  "tasks": [
+    {
+      "taskName": "asdf",
+      "date": "2018-09-07",
+      "details": "asdf",
+      "isChecked": false,
+      "id": 1
+    },
+    {
+      "taskName": "asdfasf",
+      "date": "2018-09-07",
+      "details": "asdf",
+      "isChecked": false,
+      "id": 2
+    }
+  ],
+  "jokes": [
+    {
+      "setup": "knock knock",
+      "punchline": "hahaha",
+      "id": 1
+    }
+  ],
+  "events": [
+    {
+      "eventName": "asdf",
+      "url": "asdf.",
+      "date": "2018-09-07",
+      "details": "asdf",
+      "id": 1
+    },
+    {
+      "eventName": "asdf",
+      "url": "asdf.",
+      "date": "2018-09-07",
+      "details": ".",
+      "id": 2
+    }
+  ],
   "friends": []
 }

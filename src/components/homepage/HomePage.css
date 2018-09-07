@@ -1,4 +1,5 @@
-.container-fluid {
+.homeButtons {
     display: flex;
     justify-content: space-evenly;
+    flex: auto
 }
