@@ -4,6 +4,7 @@ import './Register.css'
 export default class Register extends Component {
 
     state = {
+        username: "",
         userEmail: "",
         userPassword: ""
     }
@@ -34,6 +35,7 @@ export default class Register extends Component {
         document.location.href = 'http://localhost:3000/login'
 
         const users = {
+            username: this.state.username,
             email: this.state.userEmail,
             password: this.state.userPassword,
         }
@@ -51,23 +53,30 @@ export default class Register extends Component {
                 <div className="registerForm">
                     <form onSubmit={this.handleRegister}>
                         <h1 className="h3 mb-3 font-weight-normal">Please Create Account</h1>
+                        <label htmlFor="userName">
+                            Username
+                        </label>
+                        <input onChange={this.handleFieldChange} type="username"
+                            id="username"
+                            placeholder="Username"
+                            required="" autoFocus="" />
                         <label htmlFor="userEmail">
                             Email address
-                </label>
+                        </label>
                         <input onChange={this.handleFieldChange} type="email"
                             id="userEmail"
                             placeholder="Email address"
                             required="" autoFocus="" />
                         <label htmlFor="userPassword">
                             Password
-                </label>
+                        </label>
                         <input onChange={this.handleFieldChange} type="password"
                             id="userPassword"
                             placeholder="Password"
                             required="" />
                         <button type="submit" onClick={this.handleButtonClick} className="btn btn-primary">
                             Register
-                </button>
+                        </button>
                     </form>
                 </div>
             </div>
