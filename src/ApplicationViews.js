@@ -137,19 +137,19 @@ export default class ApplicationViews extends Component {
     }))
 
   addEvent = event => DataManager.add("events", event)
-    .then(() => DataManager.getUnfinishedTasks("events"))
+    .then(() => DataManager.getAllAscend("events"))
     .then(events => this.setState({
       events: events
     }))
 
   deleteEvent = id => DataManager.delete("events", id)
-    .then(() => DataManager.getUnfinishedTasks("events"))
+    .then(() => DataManager.getAllAscend("events"))
     .then(events => this.setState({
       events: events
     }))
 
   editEvent = (id, events) => DataManager.edit("events", id, events)
-    .then(() => DataManager.getUnfinishedTasks("events"))
+    .then(() => DataManager.getAllAscend("events"))
     .then(events => this.setState({
       events: events
     }))
