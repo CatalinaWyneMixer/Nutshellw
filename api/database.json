@@ -1,5 +1,12 @@
 {
-  "users": [],
+  "users": [
+    {
+      "username": "mateus",
+      "email": "mateusvanhalen@gmail.com",
+      "password": "hi",
+      "id": 1
+    }
+  ],
   "news": [
     {
       "title": "Happy Little Accidents",
