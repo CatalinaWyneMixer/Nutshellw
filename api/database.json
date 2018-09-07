@@ -1,5 +1,12 @@
 {
-  "users": [],
+  "users": [
+    {
+      "username": "grady",
+      "email": "grady@22.com",
+      "password": "22",
+      "id": 1
+    }
+  ],
   "news": [
     {
       "title": "Happy Little Accidents",
@@ -42,9 +49,9 @@
       "taskId": 11
     },
     {
-      "taskName": "project due",
-      "date": "2018-09-12",
-      "details": "kkklllllllmm",
+      "taskName": "cut the grass",
+      "date": "2018-09-08",
+      "details": "fun",
       "isChecked": false,
       "id": 12,
       "taskId": 12
@@ -57,7 +64,28 @@
       "id": 13
     }
   ],
-  "jokes": [],
+  "jokes": [
+    {
+      "setup": "knock knock",
+      "punchline": "who's there",
+      "id": 1
+    },
+    {
+      "setup": "knock knock",
+      "punchline": "who's there",
+      "id": 2
+    },
+    {
+      "setup": "knock knock",
+      "punchline": "who's there",
+      "id": 3
+    },
+    {
+      "setup": "bad joke",
+      "punchline": "rotten tomatoes",
+      "id": 4
+    }
+  ],
   "events": [],
   "friends": []
 }
