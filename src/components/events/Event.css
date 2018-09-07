@@ -39,7 +39,7 @@
     justify-content: center;
 }
 .nav-link:hover {
-    color: blueviolet;
+    color: greenyellow;
     motion-rotation: 360deg;
 }
 .nav-link-quit:hover {
