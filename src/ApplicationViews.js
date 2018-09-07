@@ -46,6 +46,11 @@ export default class ApplicationViews extends Component {
       users: users
     }))
 
+  // getAllUsers = user => DataManager.getAll("users", user)
+  //   .then(users => this.setState({
+  //     users: users
+  //   }))
+
   deleteUser = id => DataManager.delete("user", id)
     .then(() => DataManager.getAll("user"))
     .then(user => this.setState({
@@ -256,8 +261,9 @@ export default class ApplicationViews extends Component {
         <Route exact path="/messages" render={(props) => {
           if (this.isAuthenticated()) {
             return <MessageList {...props}
-            deleteMessage ={this.deleteMessage}
-            messages={this.state.messages} />
+              editMessage={this.editMessage}
+              deleteMessage={this.deleteMessage}
+              messages={this.state.messages} />
           } else {
             return <Redirect to="/" />
           }
@@ -318,7 +324,7 @@ export default class ApplicationViews extends Component {
           } else {
             return <Redirect to="/" />
           }
-        }} /> 
+        }} />
         <Route exact path="/jokes/:jokeId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <JokeDetail {...props} deleteJoke={this.deleteJoke} jokes={this.state.jokes} />

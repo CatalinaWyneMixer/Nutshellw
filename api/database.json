@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "users": [
     {
       "email": "aartkeen@ut.utm.edu",
@@ -21,6 +22,9 @@
       "id": 5
     }
   ],
+=======
+  "users": [],
+>>>>>>> master
   "news": [
     {
       "title": "Happy Little Accidents",
