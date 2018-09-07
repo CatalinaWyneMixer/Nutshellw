@@ -343,7 +343,7 @@ export default class ApplicationViews extends Component {
         }} />
         <Route exact path="/jokes/edit/:jokeId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
-            return <JokeEditForm {...props} deleteJoke={this.deleteJoke} jokes={this.state.jokes} />
+            return <JokeEditForm {...props} editJoke={this.editJoke} deleteJoke={this.deleteJoke} jokes={this.state.jokes} />
           } else {
             return <Redirect to="/login" />
           }

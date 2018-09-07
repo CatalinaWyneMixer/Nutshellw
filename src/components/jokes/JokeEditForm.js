@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import DataManager from './../../modules/DataManager'
+
 // the edit button will live on Joke Detail
 
 export default class JokeEditForm extends Component {
@@ -15,9 +15,10 @@ handleFieldChange = evt => {
 }
 
 componentDidMount() {
-    // console.log(this.state)
+    console.log(this.props)
     const joke = this.props.jokes.find(e => e.id === parseInt(this.props.match.params.jokeId))
-    this.setState(joke);
+    const oldJoke = {...joke}
+    this.setState(oldJoke);
 }
 constructNewJoke = (evt) => {
     evt.preventDefault()
@@ -27,27 +28,26 @@ constructNewJoke = (evt) => {
         punchline: this.state.punchline,
         id: this.state.id
     }
-    DataManager.edit("jokes", newJoke.id, newJoke)
-    .then(()=>{
-        this.props.history.push(`/jokes/${this.props.match.params.jokeId}`)
-    })}
-
+    console.log("newjoke", newJoke)
+    this.props.editJoke(newJoke.id, newJoke)
+    .then(() => this.props.history.push("/jokes"))
+}
 render() {
     return (
         <React.Fragment>
             <form className="eventForm">
                 <div className="form-group">
-                    <label htmlFor="setup">setup</label>
+                    <label htmlFor="setup">edit setup</label>
                     <input type="text" required="true"
                         onChange={this.handleFieldChange}
-                        id="newSetup"
+                        id="setup"
                         placeholder={this.props.setup} />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="punchline">punchline </label>
+                    <label htmlFor="punchline">edit punchline </label>
                     <input type="text" required="true"
                         onChange={this.handleFieldChange}
-                        id="newpunchline"
+                        id="punchline"
                         placeholder={this.props.punchline} />
                 </div>
                 <button type="submit" onClick={this.constructNewJoke}

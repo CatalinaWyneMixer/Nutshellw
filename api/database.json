@@ -72,19 +72,9 @@
   ],
   "jokes": [
     {
-      "setup": "knock knock",
-      "punchline": "who's there",
-      "id": 2
-    },
-    {
-      "setup": "knock knock",
-      "punchline": "who's there",
-      "id": 3
-    },
-    {
-      "setup": "bad joke",
-      "punchline": "yo mama",
-      "id": 4
+      "setup": "yo mama so crosseyed",
+      "punchline": "when she cries, tears roll down her back!",
+      "id": 1
     }
   ],
   "events": [],
