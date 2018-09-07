@@ -16,7 +16,7 @@ handleFieldChange = evt => {
 
 componentDidMount() {
     // console.log(this.state)
-    const task = this.props.tasks.find(a => a.id === parseInt(this.props.match.params.taskId))
+    const task = this.props.tasks.find(a => a.id === parseInt(this.props.match.params.taskId, 0))
     this.setState(task);
 }
 constructNewTask = (evt) => {
