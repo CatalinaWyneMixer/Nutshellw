@@ -200,8 +200,10 @@ export default class ApplicationViews extends Component {
                       .then(allJokes => {
                         newState.jokes = allJokes
                       })
+
+                      //i think dan messed this up. should be get all ascend
                       .then(() => {
-                        DataManager.getUnfinishedTasks("events")
+                        DataManager.getAllAscend("events")
                           .then(allEvents => {
                             newState.events = allEvents
                           })
@@ -348,7 +350,7 @@ export default class ApplicationViews extends Component {
           } else {
             return <Redirect to="/login" />
           }
-        }} /> 
+        }} />
         < Route exact path="/events" render={(props) => {
           if (this.isAuthenticated()) {
             return <EventList {...props}

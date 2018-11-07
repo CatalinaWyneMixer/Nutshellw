@@ -11,10 +11,7 @@ class MessageList extends Component {
         // console.log(this.props)
         const credentials = JSON.parse(localStorage.getItem('credentials'))
 
-
-
-
-        return (
+    return (
             <React.Fragment>
 
                 <div className="messagesButton">
