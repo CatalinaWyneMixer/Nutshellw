@@ -20,7 +20,7 @@ class EventList extends Component{
         var year = date.getFullYear();
 
         // return day + ' ' + monthNames[monthIndex] + ' ' + year;
-        return monthIndex + '/' +day+ '/'+year;
+        return monthIndex+ '/' +day+ '/'+year;
       }
 
     render() {
