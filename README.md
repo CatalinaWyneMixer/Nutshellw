@@ -1,5 +1,5 @@
-#NUTSHELL/REACT
-#team CatalinaWyneMixer
+# NUTSHELL/REACT
+# team CatalinaWyneMixer
 Dan Brewer
 Matt Hall
 Aaron Keen
@@ -7,14 +7,16 @@ Grady Robbins
 John Wood
 
 # Created with create-react-app
-# Download and
+# To Run:  clone this repository
 ```
 npm install
 ```
-run json server in api folder
+cd api run json server in api folder:
 ```
 json-server -p 8088 -w database.json
 ```
+go back to root folder: 
+```cd ..```
 ```
 npm start
 ```
