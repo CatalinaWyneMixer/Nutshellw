@@ -10,12 +10,12 @@ Grady Robbins<br/>
 John Wood
 
 # To Run this repository:
-1. clone this repository
-1. ```npm install ```
-1. ```cd api```
-1. run a json server from the api folder using this command: ```json-server -p 8088 -w database.json```
-1. return to your root folder: ```cd ..```
-1. ```npm start``` The Nutshell Application will open in your browser at this address: http://localhost:3000
-1. Create a user profile with a password to get going!
+1. ```git clone https://github.com/CatalinaWyneMixer/Nutshellw.git``` 
+2. ```npm install ```
+3. ```cd api```
+4. run a json server from the api folder using this command: ```json-server -p 8088 -w database.json```
+5. return to your root folder: ```cd ..```
+6. ```npm start``` The Nutshell Application will open in your browser at this address: http://localhost:3000
+7. Create a user profile with a password to get going!
 
 !["Nutshell"screengrab](/screengrab.png )

@@ -6,6 +6,7 @@
     "acorn": "^7.1.1",
     "dot-prop": "^5.2.0",
     "handlebars": "^4.7.6",
+    "http-proxy": "^1.18.1",
     "kind-of": "^6.0.3",
     "mem": "^5.1.1",
     "minimist": "^1.2.5",
@@ -15,6 +16,7 @@
     "react-scripts": "^3.4.3",
     "tar": "^4.4.10",
     "webpack-dev-server": "^3.11.0",
+    "yargs-parser": "^19.0.4",
     "yarn": "^1.22.5"
   },
   "scripts": {
